@@ -1,0 +1,53 @@
+name: autofix.ci
+
+# Commits the fixes made below back to the pull request branch.
+# The action authenticates with the autofix.ci GitHub App installation,
+# so the token this workflow gets stays read-only.
+permissions:
+  contents: read
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+concurrency:
+  group: autofix-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  autofix:
+    name: Autofix
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: pnpm/setup@v2
+        with:
+          runtime: node@24
+          cache: true
+          install: false
+
+      # No --frozen-lockfile: autofix is allowed to repair the lockfile.
+      - run: pnpm install
+
+      # continue-on-error, otherwise a single lint error that cannot be fixed
+      # automatically stops the job before the commit step and nothing is
+      # pushed. `pnpm lint` in ci.yml is still what decides a green PR.
+      - name: ESLint
+        run: pnpm run lint:fix
+        continue-on-error: true
+
+      # eslint.config.ts ignores **/*.md, so the docs need their own pass.
+      # AutoCorrect normalizes CJK punctuation and the spacing between CJK
+      # and Latin text, which is most of what a Chinese docs repo gets wrong.
+      # Drop this step if only lint fixes are wanted.
+      - name: AutoCorrect
+        uses: huacnlee/autocorrect-action@v2.5.4
+        with:
+          args: content README.md --fix
+        continue-on-error: true
+
+      # Must stay the last step.
+      - uses: autofix-ci/action@7a166d7532b277f34e16238930461bf77f9d7ed8 # v1.3.3
