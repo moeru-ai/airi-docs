@@ -85,7 +85,7 @@ export const gitAuthors: MapAuthors = [
     mapByNameAliases: ['Columbina'],
   },
   {
-    name:'Icefair',
-    username:'JhIcefair',
+    name: 'Icefair',
+    username: 'JhIcefair',
   },
 ]
