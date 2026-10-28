@@ -13,8 +13,12 @@ authors:
     githubUsername: 0xSelenicDove
     role: Contributing editor
     kind: person
+  - name: jim139129
+    githubUsername: jim139129
+    role: Contributing editor
+    kind: person
 ---
-이 설명서는 AIRI 0.11.3 버전에 대응합니다.
+이 설명서는 AIRI 0.13.0 버전에 대응합니다.
 
 ::: warning 시작하기 전에
 - AIRI의 일부 기능과 조작은 이 설명서에서 자세히 다루지 않습니다.
@@ -41,8 +45,10 @@ authors:
 | macOS | Intel | `AIRI-<version>-darwin-x64.dmg` |
 | Linux | Ubuntu 등 x64 Debian 계열 | `AIRI-<version>-linux-amd64.deb` |
 | Linux | Fedora, openSUSE 등 x64 RPM 계열 | `AIRI-<version>-linux-x86_64.rpm` |
+| Linux | Flatpak이 설치된 x64 시스템 | `AIRI-<version>-linux-x64.flatpak` |
 | Linux | Ubuntu 등 ARM64 Debian 계열 | `AIRI-<version>-linux-arm64.deb` |
 | Linux | Fedora, openSUSE 등 ARM64 RPM 계열 | `AIRI-<version>-linux-aarch64.rpm` |
+| Linux | Flatpak이 설치된 ARM64 시스템 | `AIRI-<version>-linux-arm64.flatpak` |
 | Android | 지원되는 HarmonyOS 기기를 포함한 Android 기기 | `AIRI-<version>-android.apk` |
 | iOS/iPadOS | iPhone, iPad | iOS/iPadOS용 `.ipa` 에셋 |
 
@@ -95,30 +101,33 @@ API Key, AccessKey Secret 같은 서비스 자격 증명은 기기에만 저장�
 
 이 절은 데스크톱 앱을 중심으로 설명합니다. 웹과 모바일 앱의 많은 부분에도 적용되며, 각각의 고유 기능은 [여기](#chapter-3-main-web)에서 소개합니다.
 
-이 창은 가상 캐릭터를 표시합니다. 주요 컨트롤은 다음과 같습니다:
+이 창은 가상 캐릭터를 표시합니다. 주요 컨트롤은 다섯 개입니다:
 
 - **Expand** - 오른쪽 아래에 있습니다. 클릭하면 더 많은 컨트롤이 나타납니다.
-- **Open hearing Controls** - 음성 입력 컨트롤을 엽니다.
+- **Open Chat** - 채팅 창을 엽니다.
+- **Open microphone** - 음성 입력을 켜서 AIRI에게 말할 수 있게 합니다.
+- **Mute** - 설명서 편집자가 아직 동작을 테스트하지 않아 여기서는 자세히 다루지 않습니다.
+- **Drag to move window** - 마우스 왼쪽 버튼을 누른 채 끌어서 메인 창을 옮깁니다.
+
+**Expand**를 클릭하면 다음 컨트롤이 나타납니다. 일부 항목은 로그인 상태에 따라 표시됩니다:
+
+- **Sign in** — AIRI 계정으로 로그인합니다.
+- **Notifications** — 로그인한 후에만 표시됩니다.
+- **Open settings** — AIRI의 설정 인터페이스를 엽니다.
+- **Switch Profile** — 프로필을 전환합니다.
+- **Refresh** — 메인 창을 새로 고칩니다.
+- **Move to screen center** — 창을 화면 가운데로 옮깁니다.
+- **Theme** — 밝게, 어둡게, 시스템 테마 간에 전환합니다.
+- "Pin on top"/"Unpin from top" - AIRI 창을 다른 창들 위에 항상 표시할지 제어합니다.
+- "Auto hide"/"Always show" - 포인터를 창 위로 옮겼을 때 AIRI 창이 비켜날지 제어합니다.
+- **Open hearing Controls** — 음성 입력 컨트롤을 엽니다.
+- **Close** — 클릭 한 번으로 AIRI를 닫습니다.
+
 ::: info 청각 컨트롤
 먼저 마이크 입력을 켜고 마이크를 선택하세요. 권한 요청이 나타나면 AIRI가 마이크를 사용하도록 허용하세요. 전사 서비스를 설정하면 음성이 전사되어 현재 채팅 세션으로 전송됩니다. AIRI는 피드백을 줄이기 위해 말하는 동안 입력을 일시 중지합니다.
 :::
 
-- **Drag to move window** - 마우스 왼쪽 버튼을 누른 채 끌어서 메인 창을 옮깁니다.
-
-**Expand**를 클릭하세요. 사용할 수 있는 컨트롤은 다음과 같습니다:
-
-- **Sign in** — AIRI 계정으로 로그인합니다.
-- **Open settings** — AIRI의 설정 인터페이스를 엽니다.
-- **Switch Profile** — 프로필을 전환합니다.
-- **Open Chat** — 채팅 창을 엽니다.
-- **Refresh** — 메인 창을 새로 고칩니다.
-- **Move to screen center** — 창을 화면 가운데로 옮깁니다.
-- "Switch to dark mode"/"Switch to light mode" - AIRI의 인터페이스 테마를 전환합니다.
-- "Pin on top"/"Unpin from top" - AIRI 창을 다른 창들 위에 항상 표시할지 제어합니다.
-- "Auto hide"/"Always show" - 포인터를 창 위로 옮겼을 때 AIRI 창이 비켜날지 제어합니다.
-- **Close** — 클릭 한 번으로 AIRI를 닫습니다.
-
-![펼쳐진 AIRI 메인 창 컨트롤 메뉴](/en/docs/manual/tamagotchi/setup-and-use/assets/manual-controls-island-expanded.avif)
+![펼쳐진 AIRI 메인 창 컨트롤 메뉴](/zh-Hans/docs/manual/tamagotchi/setup-and-use/image-17.avif)
 
 <a id="chapter-3-system-tray"></a>
 ### 시스템 트레이의 그 외 옵션
@@ -169,6 +178,8 @@ AIRI 아이콘을 오른쪽 클릭해 트레이 메뉴를 여세요. 표시되�
 - 메인 창에서 **Expand**를 클릭한 뒤 **Open settings**를 선택합니다.
 - 시스템 트레이의 AIRI 아이콘을 오른쪽 클릭하고 **Settings...**를 선택합니다.
 
+설정 페이지 상단의 검색창에서 필요한 설정을 찾을 수 있습니다.
+
 설정 내비게이션에는 다음이 포함됩니다:
 
 - **AIRI 카드** - 활성 캐릭터를 선택하고 설정합니다.
@@ -186,7 +197,7 @@ AIRI 아이콘을 오른쪽 클릭해 트레이 메뉴를 여세요. 표시되�
 <a id="chapter-3-chat-window"></a>
 ### 채팅 창
 
-메인 창에서 **Expand**를 클릭한 뒤 **Open Chat**을 선택하면 채팅 창을 열 수 있습니다.
+메인 창에서 **Open Chat**을 클릭하면 채팅 창을 열 수 있습니다.
 
 ![AIRI 채팅 창](/en/docs/manual/tamagotchi/setup-and-use/assets/manual-chat-window.avif)
 
@@ -352,7 +363,7 @@ X / Twitter 설정 폼은 있지만 AIRI 0.11.3에서는 연동이 동작하지 
 
 #### 웹 검색
 
-**설정 → 모듈 → Web Search**를 열고 [웹 검색 설정 가이드](../../config/web-search.md)를 따라 Tavily API Key를 설정하고 사용법, 개인정보 팁, FAQ를 확인하세요.
+**설정 → 모듈 → Web Search**를 열고 [웹 검색 설정 가이드](../../config/web-search.md)를 따라 Tavily 또는 DeepSeek API Key를 설정하고 사용법, 개인정보 팁, FAQ를 확인하세요.
 
 #### Minecraft
 
