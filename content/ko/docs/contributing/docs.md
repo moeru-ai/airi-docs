@@ -16,7 +16,7 @@ pnpm -F @proj-airi/docs typecheck
 pnpm -F @proj-airi/docs build
 ```
 
-영어 페이지를 추가할 때는 `docs/.vitepress/config.ts`의 `en` 사이드바에도 추가하세요. 그렇지 않으면 페이지가 URL로는 접근할 수 있지만 내비게이션에는 나타나지 않습니다.
+영어 페이지를 추가할 때는 `docs/.vitepress/config.ts`의 `en` 사이드바에도 추가하세요. 그렇지 않으면 페이지가 URL 로는 접근할 수 있지만 내비게이션에는 나타나지 않습니다.
 
 ::: tip
 [@antfu/ni](https://github.com/antfu-collective/ni)를 사용한다면 다음을 실행하세요:

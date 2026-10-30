@@ -1,5 +1,5 @@
 ---
-title: Player2 Speech（TTS）
+title: Player2 Speech (TTS)
 description: 在 AIRI 中连接本地 Player2 Speech 服务
 ---
 

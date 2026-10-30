@@ -7,7 +7,7 @@ To chat with AIRI, configure at least one Chat provider and chat model. Speech s
 
 ## Configure the minimum required setup
 
-1. Open AIRI’s **Settings → Providers**.
+1. Open AIRI's **Settings → Providers**.
 2. Select a provider in the **Chat** category, enter its credentials, and complete the available verification.
 3. Open **Settings → Modules → Consciousness** and select the provider and model you configured.
 4. Send a message to confirm that AIRI can reply.

@@ -1,18 +1,18 @@
 ---
 title: Satori 봇
-description: Koishi와 Satori 프로토콜을 통해 AIRI를 여러 메시징 플랫폼에 연결하기
+description: Koishi 와 Satori 프로토콜을 통해 AIRI 를 여러 메시징 플랫폼에 연결하기
 ---
 
-Satori 봇은 Koishi의 Satori 서비스를 통해 QQ, Telegram, Discord, Lark 같은 메시징 플랫폼에 연결됩니다. 현재의 독립 실행형 코어는 과도기적 구현으로 실험과 유지보수에 적합하며, 안정적인 AIRI Core 통합으로 간주해서는 안 됩니다.
+Satori 봇은 Koishi 의 Satori 서비스를 통해 QQ, Telegram, Discord, Lark 같은 메시징 플랫폼에 연결됩니다. 현재의 독립 실행형 코어는 과도기적 구현으로 실험과 유지보수에 적합하며, 안정적인 AIRI Core 통합으로 간주해서는 안 됩니다.
 
 ## 사전 준비 사항
 
 - 저장소 루트에서 **pnpm i**로 의존성을 설치하세요.
 - **server-satori** 플러그인이 활성화된 Koishi 인스턴스를 실행하세요.
-- OpenAI 호환 API를 제공하는 모델 서비스를 준비하세요.
+- OpenAI 호환 API 를 제공하는 모델 서비스를 준비하세요.
 
 ::: warning 자격 증명 보안
-Satori 토큰, 메시징 플랫폼 자격 증명, 모델 API Key는 로컬 **.env.local** 파일에만 보관하세요. 이 값을 커밋하거나, 스크린샷에 포함하거나, 공유하지 마세요.
+Satori 토큰, 메시징 플랫폼 자격 증명, 모델 API Key 는 로컬 **.env.local** 파일에만 보관하세요. 이 값을 커밋하거나, 스크린샷에 포함하거나, 공유하지 마세요.
 :::
 
 ## 설정

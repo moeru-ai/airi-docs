@@ -30,15 +30,15 @@ date: 2025-03-06
 
 [`unplugin-vue-router`](https://github.com/posva/unplugin-vue-router) が提供する [`definePage`](https://uvr.esm.is/guide/extending-routes.html#definepage) マクロフックを試してみたところ、私の使用シナリオに非常に適していることがわかったので、この方向で探索を続けることにしました。
 
-[https://cowardly-witch.netlify.app/](https://cowardly-witch.netlify.app/) からさらに3つの新しいアニメーション・トランジション効果を移植しました。これらはすでに [https://proj-airi-packages-ui-transitions.netlify.app/#/](https://proj-airi-packages-ui-transitions.netlify.app/#/) で利用可能です。
+[https://cowardly-witch.netlify.app/](https://cowardly-witch.netlify.app/) からさらに 3 つの新しいアニメーション・トランジション効果を移植しました。これらはすでに [https://proj-airi-packages-ui-transitions.netlify.app/#/](https://proj-airi-packages-ui-transitions.netlify.app/#/) で利用可能です。
 
 昨日、公式ドキュメントサイトを [https://airi.build](https://airi.build) にデプロイしましたが、[@kwaa](https://github.com/kwaa) から `https://airi.more.ai/docs` の方法を試してみてはどうかというコメントをもらいました。~~しかし、/docs のために 200 リダイレクトプロキシを設定する方法が思いつきませんでした。~~
 
 編集：最終的にその方法を学びました。将来の開発ログに詳細を含める予定です。
 
-試してみましたが、約10回のコミットを費やして CI/CD パイプラインと格闘しました（はい、またです）が、結局正常に動作させることはできませんでした。
+試してみましたが、約 10 回のコミットを費やして CI/CD パイプラインと格闘しました（はい、またです）が、結局正常に動作させることはできませんでした。
 
-今日の遅くには、いくつかの技術や DeepSeek チームが1週間前に公開した[オープンソースリポジトリ](https://github.com/deepseek-ai/open-infra-index)、そしていわゆる ByteDance が公開した [LLM ゲートウェイ AIBrix](https://github.com/vllm-project/aibrix) について調査しました。また、新しくリリース・発表された Phi-4-mini が AIRI で使用するために移植可能かどうかも研究しています。良いニュースは、[Phi-4-mini](https://techcommunity.microsoft.com/blog/educatordeveloperblog/welcome-to-the-new-phi-4-models---microsoft-phi-4-mini--phi-4-multimodal/4386037) に関数呼び出し機能が含まれていることです。これはつまり、ついに事前学習サポート付きのエージェントを構築できることを意味します。
+今日の遅くには、いくつかの技術や DeepSeek チームが 1 週間前に公開した[オープンソースリポジトリ](https://github.com/deepseek-ai/open-infra-index)、そしていわゆる ByteDance が公開した [LLM ゲートウェイ AIBrix](https://github.com/vllm-project/aibrix) について調査しました。また、新しくリリース・発表された Phi-4-mini が AIRI で使用するために移植可能かどうかも研究しています。良いニュースは、[Phi-4-mini](https://techcommunity.microsoft.com/blog/educatordeveloperblog/welcome-to-the-new-phi-4-models---microsoft-phi-4-mini--phi-4-multimodal/4386037) に関数呼び出し機能が含まれていることです。これはつまり、ついに事前学習サポート付きのエージェントを構築できることを意味します。
 
 ## 開発配信
 
@@ -46,7 +46,7 @@ date: 2025-03-06
 
 ~~はい、アーティストにいくつかイースターエッグを入れてもらうように頼みました（笑）。見つけられるよう頑張ってください。~~
 
-配信のレイアウトと設定を更新しました 😻 これはほぼ1年前に自分でデザインしたものですが、今見ても素晴らしく、見ていて落ち着く感じがします。チャットにコメントや提案を残していただけると嬉しいです。
+配信のレイアウトと設定を更新しました 😻 これはほぼ 1 年前に自分でデザインしたものですが、今見ても素晴らしく、見ていて落ち着く感じがします。チャットにコメントや提案を残していただけると嬉しいです。
 
 ![](/en/blog/DevLog-2025.03.06/assets/live-stream-layout-update.avif)
 

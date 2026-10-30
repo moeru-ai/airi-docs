@@ -70,7 +70,7 @@
     - [Characters Product List | Vket Store](https://store.vket.com/en/category/1)
   - 动画支持：VRM Animation `.vrma`
     - [`vrma` Spec](https://github.com/vrm-c/vrm-specification/tree/master/specification/VRMC_vrm_animation-1.0)
-    - [3D Motion & Animationの人気の同人グッズ1283点を通販 - BOOTH](https://booth.pm/en/browse/3D%20Motion%20&%20Animation)
-      - [VRMアニメーション7種セット（.vrma） - VRoid Project - BOOTH](https://vroid.booth.pm/items/5512385)
+    - [3D Motion & Animation の人気の同人グッズ 1283 点を通販 - BOOTH](https://booth.pm/en/browse/3D%20Motion%20&%20Animation)
+      - [VRM アニメーション 7 種セット（.vrma） - VRoid Project - BOOTH](https://vroid.booth.pm/items/5512385)
         - [VRoid Hub introduces Photo Booth for animation playback! "VRM Animation (.vrma)" now listed on BOOTH, plus 7 free animation files!](https://vroid.com/en/news/6HozzBIV0KkcKf9dc1fZGW)
         - [malaybaku/AnimationClipToVrmaSample: Sample Project to Convert AnimationClip to VRM Animation (.vrma) in Unity](https://github.com/malaybaku/AnimationClipToVrmaSample)

@@ -252,7 +252,7 @@ title: 编年史 v0.0.1
   - [ ] 调研参考
     - [ ] Index 站
       - [ ] [アニメーション | 81-web.com : 日本のWebデザイン・Webサイトギャラリー＆参考サイト・リンク集](https://81-web.com/tag/animation)
-      - [ ] [2021年版イケてるアニメのWebサイト10選(自薦) | Blog | 株式会社イロコト | ゲーム･アニメ等のエンタメ系Web制作&運用会社](https://irokoto.co.jp/blog/20210421/post-20)
+      - [ ] [2021年版イケてるアニメのWebサイト10選(自薦) | Blog | 株式会社イロコト | ゲーム･アニメ等のエンタメ系 Web 制作&運用会社](https://irokoto.co.jp/blog/20210421/post-20)
       - [ ] [漫画･アニメ･ゲーム | SANKOU! | Webデザインギャラリー･参考サイト集](https://sankoudesign.com/category/comic-anime-movie-game-book/)
       - [ ] [KVが動画・アニメーションのWebデザイン参考ギャラリー・リンク集 | Web Design Garden | 毎日更新！Webデザイン参考ギャラリーサイト](https://webdesigngarden.com/category/element/kv-movie/)
       - [ ]
@@ -346,36 +346,36 @@ title: 编年史 v0.0.1
 #### 免费
 
 - [光彩盛年 (huotan.com)](https://guangcai.huotan.com/)
-- [販売作品検索(Live2D) | 投稿日順 - nizima by Live2D](https://nizima.com/Search/ResultItem?isIncludePreparation=true&category=live2d&product-type=sale)
+- [販売作品検索 (Live2D) | 投稿日順 - nizima by Live2D](https://nizima.com/Search/ResultItem?isIncludePreparation=true&category=live2d&product-type=sale)
 - [【免费模型】这么可爱的小狗免费带回家！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1LM41137vK/)
-- [【免费live2d模型】免费的小恶魔带回家(∠・ω< )⌒☆_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1fP411e7fA/)
-- [【免费L2D模型】可盐可甜的机能风少女！无料模型大公开~点击领取_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1S8411H7zf/)
-- [【芙莉莲免费live2d模型】当年对欣梅尔使出这招的时候，明明威力大到他晕倒的说=w=_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1te411b7Xp)
-- [【免费live2D模型】1w元超高精模型直接免费抱回家？_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1hB4y1Q7vn/)
+- [【免费 live2d 模型】免费的小恶魔带回家 (∠・ω< )⌒☆_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1fP411e7fA/)
+- [【免费 L2D 模型】可盐可甜的机能风少女！无料模型大公开~点击领取_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1S8411H7zf/)
+- [【芙莉莲免费 live2d 模型】当年对欣梅尔使出这招的时候，明明威力大到他晕倒的说=w=_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1te411b7Xp)
+- [【免费 live2D 模型】1w 元超高精模型直接免费抱回家？_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1hB4y1Q7vn/)
 - [哔哩哔哩工房](https://gf.bilibili.com/item/detail/1105759077)
-- [【免费live2d模型展示】领取一份地雷系少女吧_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1eu4y187zw)
-- [【一块钱Live2D模型展示】原 真夜白音 模型公开_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1i94y1W77Y/)
+- [【免费 live2d 模型展示】领取一份地雷系少女吧_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1eu4y187zw)
+- [【一块钱 Live2D 模型展示】原 真夜白音 模型公开_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1i94y1W77Y/)
 
 #### 像素
 
-- [【汎用カスタムモデル】かすたむpixelgirl【VTS対応書き出しデータ】 - のぢまーと - BOOTH](https://booth.pm/ja/items/5661930)
-- [【Live2D showcase】かすたむpixelgirl【汎用カスタムモデル販売中🌷】 - YouTube](https://www.youtube.com/watch?time_continue=32&v=4RuI2J-1lJc&embeds_referring_euri=https%3A%2F%2Fbooth.pm%2F&source_ve_path=Mjg2NjY&feature=emb_logo)
+- [【汎用カスタムモデル】かすたむ pixelgirl【VTS 対応書き出しデータ】 - のぢまーと - BOOTH](https://booth.pm/ja/items/5661930)
+- [【Live2D showcase】かすたむ pixelgirl【汎用カスタムモデル販売中🌷】 - YouTube](https://www.youtube.com/watch?time_continue=32&v=4RuI2J-1lJc&embeds_referring_euri=https%3A%2F%2Fbooth.pm%2F&source_ve_path=Mjg2NjY&feature=emb_logo)
 - [【Vtuber Self-Introduction】 Pixel VTuber Q&A Self-Intro ✧ - YouTube](https://www.youtube.com/watch?v=WTMkpXBGDpM)
 - [Pixel Vtuber [Live2d VTuber] (youtube.com)](https://www.youtube.com/watch?v=wufHsJ30mS4)
 - [Is it possible to use pixel art for my model? : r/vtubertech (reddit.com)](https://www.reddit.com/r/vtubertech/comments/su2qwt/is_it_possible_to_use_pixel_art_for_my_model/)
-- [【FaceRig対応】Live2D×ドット絵モデル - poribaketu - BOOTH](https://booth.pm/en/items/3056994)
+- [【FaceRig 対応】Live2D×ドット絵モデル - poribaketu - BOOTH](https://booth.pm/en/items/3056994)
 - [[Live2D Showcase] Otori Emu 鳳えむ (youtube.com)](https://www.youtube.com/watch?v=Hl5AUrf6SAg)
 
 #### 动作
 
-- [身体の動き11種【Live2D学習用データ】 - Totori_Store - BOOTH](https://booth.pm/ja/items/5618038)
-- [【live2dモデル】デフォルメ猫耳少女【vts用】 - panda-mf - BOOTH](https://booth.pm/ja/items/3599537)
-- [【VTubeStudio用】カスタムちびキャラ - panda-mf - BOOTH](https://booth.pm/ja/items/4290929)
+- [身体の動き 11 種【Live2D 学習用データ】 - Totori_Store - BOOTH](https://booth.pm/ja/items/5618038)
+- [【live2d モデル】デフォルメ猫耳少女【vts 用】 - panda-mf - BOOTH](https://booth.pm/ja/items/3599537)
+- [【VTubeStudio 用】カスタムちびキャラ - panda-mf - BOOTH](https://booth.pm/ja/items/4290929)
 
 #### 教程
 
-- [「はじめてのLive2D」用教材データ - ディープブリザード修練所 - BOOTH](https://booth.pm/en/items/3191157)
-- [【初心者向け！】Live2D練習用モデル - なきっちょ展覧会 - BOOTH](https://booth.pm/en/items/4856399)
+- [「はじめての Live2D」用教材データ - ディープブリザード修練所 - BOOTH](https://booth.pm/en/items/3191157)
+- [【初心者向け！】Live2D 練習用モデル - なきっちょ展覧会 - BOOTH](https://booth.pm/en/items/4856399)
 
 ## 附录
 

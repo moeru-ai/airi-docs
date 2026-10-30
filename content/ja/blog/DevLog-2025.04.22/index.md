@@ -8,7 +8,7 @@ date: 2025-04-22
 
 こんにちは、[@LemonNeko](https://github.com/LemonNekoGH) です。今回は私が DevLog の執筆に参加し、開発ストーリーを皆さんと共有します。
 
-2ヶ月前、私たちは AIRI の Web 版を Electron に移植しました [#7](https://github.com/moeru-ai/airi/pull/7)（現在は Tauri を使用してリファクタリングされています 🤣 [#90](https://github.com/moeru-ai/airi/pull/90)）。これにより、デスクトップペットとして画面に表示できるようになりました。同時に、AIRI が携帯電話を使えるようにするというアイデアが浮かびましたが、なかなか着手できませんでした。
+2 ヶ月前、私たちは AIRI の Web 版を Electron に移植しました [#7](https://github.com/moeru-ai/airi/pull/7)（現在は Tauri を使用してリファクタリングされています 🤣 [#90](https://github.com/moeru-ai/airi/pull/90)）。これにより、デスクトップペットとして画面に表示できるようになりました。同時に、AIRI が携帯電話を使えるようにするというアイデアが浮かびましたが、なかなか着手できませんでした。
 
 先週末（2025.04.20）、少し時間を割いて、ADB と対話できる MCP サーバーのデモ [airi-android](https://github.com/LemonNekoGH/airi-android) を作成しました。これにより、AIRI に携帯電話と対話する最も基本的な機能が提供されました（実際、ほとんどの LLM はこれを通じて携帯電話と対話できます）。デモ動画はこちらです：
 

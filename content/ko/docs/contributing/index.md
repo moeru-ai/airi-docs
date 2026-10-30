@@ -1,12 +1,12 @@
 ---
 title: 개발 환경 설정과 첫 기여
-description: Project AIRI를 로컬에서 실행하고 첫 Pull Request 제출하기
+description: Project AIRI 를 로컬에서 실행하고 첫 Pull Request 제출하기
 ---
 
-안녕하세요! Project AIRI에 기여하는 데 관심을 가져 주셔서 감사합니다. 이 가이드는 로컬 개발 환경을 설정하고, 브랜치를 만들고, 첫 Pull Request를 제출하는 방법을 설명합니다.
+안녕하세요! Project AIRI 에 기여하는 데 관심을 가져 주셔서 감사합니다. 이 가이드는 로컬 개발 환경을 설정하고, 브랜치를 만들고, 첫 Pull Request 를 제출하는 방법을 설명합니다.
 
 ::: info 적용 범위
-이 섹션은 소스 코드, 문서, 디자인 리소스를 변경하려는 컨트리뷰터를 위한 내용입니다. AIRI를 사용하기만 하려면 사용자 매뉴얼부터 시작하세요. 앱에 내장된 디버깅 도구는 [개발자 도구](./desktop-developer-tools)를 참고하세요.
+이 섹션은 소스 코드, 문서, 디자인 리소스를 변경하려는 컨트리뷰터를 위한 내용입니다. AIRI 를 사용하기만 하려면 사용자 매뉴얼부터 시작하세요. 앱에 내장된 디버깅 도구는 [개발자 도구](./desktop-developer-tools)를 참고하세요.
 :::
 
 ## 사전 준비물
@@ -14,12 +14,12 @@ description: Project AIRI를 로컬에서 실행하고 첫 Pull Request 제출�
 - [Git](https://git-scm.com/downloads)
 - [mise](https://mise.jdx.dev/installing-mise.html) 또는 `.tool-versions`를 읽는 다른 버전 관리자
 
-이 저장소는 [`.tool-versions`](https://github.com/moeru-ai/airi/blob/main/.tool-versions)에 Node.js와 pnpm 버전을 고정해 둡니다. [`package.json`](https://github.com/moeru-ai/airi/blob/main/package.json)의 `packageManager` 필드도 pnpm 버전을 지정합니다. 저장소를 클론한 뒤 mise로 이 버전들을 설치하세요.
+이 저장소는 [`.tool-versions`](https://github.com/moeru-ai/airi/blob/main/.tool-versions)에 Node.js 와 pnpm 버전을 고정해 둡니다. [`package.json`](https://github.com/moeru-ai/airi/blob/main/package.json)의 `packageManager` 필드도 pnpm 버전을 지정합니다. 저장소를 클론한 뒤 mise 로 이 버전들을 설치하세요.
 
 <details>
 <summary>Windows 설정</summary>
 
-1. PowerShell을 여세요.
+1. PowerShell 을 여세요.
 2. [`scoop`](https://scoop.sh/)을 설치하세요.
 
    ```powershell
@@ -27,7 +27,7 @@ description: Project AIRI를 로컬에서 실행하고 첫 Pull Request 제출�
    Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
    ```
 
-3. Scoop으로 Git과 mise를 설치하세요.
+3. Scoop 으로 Git 과 mise 를 설치하세요.
 
    ```powershell
    scoop install git mise
@@ -39,7 +39,7 @@ description: Project AIRI를 로컬에서 실행하고 첫 Pull Request 제출�
 <summary>macOS 설정</summary>
 
 1. 터미널, iTerm2, Ghostty, Kitty 등 원하는 터미널을 여세요.
-2. Homebrew로 Git과 mise를 설치하세요.
+2. Homebrew 로 Git 과 mise 를 설치하세요.
 
    ```shell
    brew install git mise
@@ -51,8 +51,8 @@ description: Project AIRI를 로컬에서 실행하고 첫 Pull Request 제출�
 <summary>Linux 설정</summary>
 
 1. 터미널을 여세요.
-2. [Linux용 Git 설치 안내](https://git-scm.com/downloads/linux)를 따르세요.
-3. [배포판에 맞는 패키지 또는 설치 방법](https://mise.jdx.dev/installing-mise.html)으로 mise를 설치하세요.
+2. [Linux 용 Git 설치 안내](https://git-scm.com/downloads/linux)를 따르세요.
+3. [배포판에 맞는 패키지 또는 설치 방법](https://mise.jdx.dev/installing-mise.html)으로 mise 를 설치하세요.
 
 </details>
 
@@ -108,7 +108,7 @@ git switch -c <your-branch-name>
 mise install
 ```
 
-Node.js와 pnpm 버전을 확인하세요:
+Node.js 와 pnpm 버전을 확인하세요:
 
 ```shell
 mise exec -- node --version
@@ -117,7 +117,7 @@ mise exec -- pnpm --version
 
 출력된 버전이 `.tool-versions`와 일치해야 합니다. pnpm 버전은 `package.json`의 `packageManager` 필드와도 일치해야 합니다.
 
-mise가 pnpm을 직접 설치하므로 이 설정에는 Corepack이 필요하지 않습니다. [Node.js 25 이상에는 Corepack이 번들로 포함되지 않습니다](https://github.com/nodejs/corepack#how-to-install).
+mise 가 pnpm 을 직접 설치하므로 이 설정에는 Corepack 이 필요하지 않습니다. [Node.js 25 이상에는 Corepack 이 번들로 포함되지 않습니다](https://github.com/nodejs/corepack#how-to-install).
 
 프로젝트 의존성을 설치하세요:
 
@@ -125,7 +125,7 @@ mise가 pnpm을 직접 설치하므로 이 설정에는 Corepack이 필요하지
 mise exec -- pnpm install
 ```
 
-이후 예시는 [셸에서 mise가 활성화되어 있다고](https://mise.jdx.dev/dev-tools/shims.html) 가정합니다. 그렇지 않다면 패키지 매니저 명령을 `mise exec --`를 통해 실행하세요(예: `mise exec -- pnpm typecheck`).
+이후 예시는 [셸에서 mise 가 활성화되어 있다고](https://mise.jdx.dev/dev-tools/shims.html) 가정합니다. 그렇지 않다면 패키지 매니저 명령을 `mise exec --`를 통해 실행하세요 (예: `mise exec -- pnpm typecheck`).
 
 ::: tip
 패키지 매니저 명령을 간단하게 쓰고 싶다면 [@antfu/ni](https://github.com/antfu-collective/ni)를 선택적으로 설치할 수 있습니다:
@@ -146,7 +146,7 @@ mise exec -- npm install --global @antfu/ni
 
 ### 커밋하기 전에 검증하기
 
-코드가 lint와 타입 검사를 통과하는지 확인하세요:
+코드가 lint 와 타입 검사를 통과하는지 확인하세요:
 
 ```shell
 pnpm lint
@@ -174,7 +174,7 @@ git commit -m "<your-commit-message>"
 git push -u origin <your-branch-name>
 ```
 
-이제 GitHub에서 해당 브랜치를 확인할 수 있습니다.
+이제 GitHub 에서 해당 브랜치를 확인할 수 있습니다.
 
 ## Pull Request 만들기
 
@@ -188,4 +188,4 @@ git push -u origin <your-branch-name>
 
 ## 해내셨습니다!
 
-첫 기여를 제출하신 것을 축하합니다. 이제 프로젝트 메인테이너가 여러분의 Pull Request를 리뷰할 수 있습니다.
+첫 기여를 제출하신 것을 축하합니다. 이제 프로젝트 메인테이너가 여러분의 Pull Request 를 리뷰할 수 있습니다.

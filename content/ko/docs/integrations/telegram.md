@@ -1,19 +1,19 @@
 ---
 title: Telegram 봇
-description: PostgreSQL과 모델 서비스를 사용해 AIRI를 Telegram 봇으로 실행하기
+description: PostgreSQL 과 모델 서비스를 사용해 AIRI 를 Telegram 봇으로 실행하기
 ---
 
-Telegram 봇을 실행하려면 Telegram Bot Token, PostgreSQL 벡터 데이터베이스, 모델 서비스가 필요합니다. 저장소의 Compose 서비스는 pgvector 호환 모드로 pgvecto.rs 0.4.0이 포함된 PostgreSQL을 실행합니다. 봇은 소스에서 직접 실행하도록 만들어졌습니다.
+Telegram 봇을 실행하려면 Telegram Bot Token, PostgreSQL 벡터 데이터베이스, 모델 서비스가 필요합니다. 저장소의 Compose 서비스는 pgvector 호환 모드로 pgvecto.rs 0.4.0 이 포함된 PostgreSQL 을 실행합니다. 봇은 소스에서 직접 실행하도록 만들어졌습니다.
 
 ## 사전 준비 사항
 
 - 저장소 루트에서 **pnpm i**로 의존성을 설치하세요.
 - [@BotFather](https://t.me/BotFather)로 Telegram 봇을 만들고 토큰을 발급받으세요.
-- 저장소의 PostgreSQL 벡터 서비스를 시작할 수 있도록 Docker를 준비하세요.
+- 저장소의 PostgreSQL 벡터 서비스를 시작할 수 있도록 Docker 를 준비하세요.
 - 채팅 모델과 임베딩 모델 서비스를 준비하세요.
 
 ::: warning 자격 증명 보안
-Telegram Bot Token, 데이터베이스 연결 정보, 모델 API Key는 로컬 **.env.local** 파일에만 보관하세요. 이 값을 커밋하거나, 스크린샷에 포함하거나, 공유하지 마세요.
+Telegram Bot Token, 데이터베이스 연결 정보, 모델 API Key 는 로컬 **.env.local** 파일에만 보관하세요. 이 값을 커밋하거나, 스크린샷에 포함하거나, 공유하지 마세요.
 :::
 
 ## 설정하기
@@ -33,7 +33,7 @@ cd ../..
 pnpm -F @proj-airi/telegram-bot db:push
 ```
 
-저장소의 Compose 파일은 PostgreSQL을 호스트 포트 `5433`으로 노출합니다. 이 서비스를 사용할 때는 다음과 같이 설정하세요:
+저장소의 Compose 파일은 PostgreSQL 을 호스트 포트 `5433`으로 노출합니다. 이 서비스를 사용할 때는 다음과 같이 설정하세요:
 
 ```env
 DATABASE_URL=postgres://postgres:123456@localhost:5433/postgres

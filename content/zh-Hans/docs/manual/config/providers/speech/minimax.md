@@ -1,5 +1,5 @@
 ---
-title: MiniMax Speech（TTS）
+title: MiniMax Speech (TTS)
 description: 在 AIRI 中配置 MiniMax 语音合成
 ---
 

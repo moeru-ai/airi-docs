@@ -34,11 +34,11 @@ Project AIRI の DevLog 更新が遅れてしまい申し訳ありません。�
 > - [v0.4.0 UI 更新](./DevLog-2025.03.20.mdx)
 > - [v0.4.0 リリース & 記憶機能紹介](./DevLog-2025.04.06.mdx)
 >
-> 私もこれら2つの素晴らしく人気のある DevLog を書きました！皆さんがそれらを楽しんで読んでくれることを願っています。
+> 私もこれら 2 つの素晴らしく人気のある DevLog を書きました！皆さんがそれらを楽しんで読んでくれることを願っています。
 
 # 既視感
 
-過去数週間、Project AIRI 本体の主要タスクはしばらく進展がありませんでした。おそらく、2025年3月からの大規模な UI リファクタリングとリリースの後で少し疲れていたのかもしれません。大部分の作業はコミュニティのメンテナによって行われました。
+過去数週間、Project AIRI 本体の主要タスクはしばらく進展がありませんでした。おそらく、2025 年 3 月からの大規模な UI リファクタリングとリリースの後で少し疲れていたのかもしれません。大部分の作業はコミュニティのメンテナによって行われました。
 
 以下の分野での作業について、[@LemonNekoGH](https://github.com/LemonNekoGH)、[@RainbowBird](https://github.com/luoling8192)、[@LittleSound](https://github.com/LittleSound) に深く感謝します：
 
@@ -71,7 +71,7 @@ Project AIRI の DevLog 更新が遅れてしまい申し訳ありません。�
 <img class="light" :src="CharacterCardShowcaseLight" alt="ReLU という名前の青い髪のキャラクターのカード式ユーザーインターフェースデザイン" />
 <img class="dark" :src="CharacterCardShowcaseDark" alt="ReLU という名前の青い髪のキャラクターのカード式ユーザーインターフェースデザイン" />
 
-これは私たちの UI コンポーネントライブラリでリアルタイムに動作しており、ここで遊ぶことができます：https://airi.moeru.ai/ui/#/story/src-components-menu-charactercard-story-vue 。
+これは私たちの UI コンポーネントライブラリでリアルタイムに動作しており、ここで遊ぶことができます：https://airi.moeru.ai/ui/#/story/src-components-menu-charactercard-story-vue。
 
 > 純粋な CSS と JavaScript で制御され、レイアウトは効率的なので、キャンバスの計算について心配する必要はありません。
 >
@@ -80,7 +80,7 @@ Project AIRI の DevLog 更新が遅れてしまい申し訳ありません。�
 - Tauri MCP サポート
 - AIRI を Android デバイスに接続
 
-これら2つは主要な更新と試みであり、この部分は [@LemonNekoGH](https://github.com/LemonNekoGH) によって行われました。彼女はこれらの内容についてさらに2つの DevLog を書き、舞台裏の技術的な詳細を共有しました。（Tauri 開発者やユーザーにとって非常に価値があると思います。）こちらで読むことができます：
+これら 2 つは主要な更新と試みであり、この部分は [@LemonNekoGH](https://github.com/LemonNekoGH) によって行われました。彼女はこれらの内容についてさらに 2 つの DevLog を書き、舞台裏の技術的な詳細を共有しました。（Tauri 開発者やユーザーにとって非常に価値があると思います。）こちらで読むことができます：
 
 - [Android を制御する](./DevLog-2025.04.22.mdx)
 - [Tauri における MCP](./DevLog-2025.04.28.md)
@@ -89,7 +89,7 @@ Project AIRI の DevLog 更新が遅れてしまい申し訳ありません。�
 
 ### 耳は聞き、口は話す
 
-4月15日から、AIRI の VAD（音声区間検出）、[ASR（自動音声認識）](https://huggingface.co/tasks/automatic-speech-recognition)、[TTS（テキスト読み上げ）](https://huggingface.co/tasks/text-to-speech) が非常に複雑で、使用や理解が難しいことに気づきました。その頃、私は [@himself65](https://github.com/himself65) と協力して、[Llama Index](https://www.llamaindex.ai/) の新しいプロジェクトのユースケースを改善・テストしていました。これはイベントベースの LLM ストリーミングトークンフローとオーディオバイトを処理するのに役立つライブラリで、[`llama-flow`](https://github.com/run-llama/llama-flow) と呼ばれています。
+4 月 15 日から、AIRI の VAD（音声区間検出）、[ASR（自動音声認識）](https://huggingface.co/tasks/automatic-speech-recognition)、[TTS（テキスト読み上げ）](https://huggingface.co/tasks/text-to-speech) が非常に複雑で、使用や理解が難しいことに気づきました。その頃、私は [@himself65](https://github.com/himself65) と協力して、[Llama Index](https://www.llamaindex.ai/) の新しいプロジェクトのユースケースを改善・テストしていました。これはイベントベースの LLM ストリーミングトークンフローとオーディオバイトを処理するのに役立つライブラリで、[`llama-flow`](https://github.com/run-llama/llama-flow) と呼ばれています。
 
 [`llama-flow`](https://github.com/run-llama/llama-flow) は本当に小さく、型安全に使用できます。それがなかった古い時代には、AIRI を駆動するためにデータを処理できるように、別の**キュー**構造と Vue のリアクティブ駆動ワークフローシステムを手動でラップし、多くの非同期タスクをリンクさせる必要がありました。
 
@@ -108,7 +108,7 @@ Project AIRI の DevLog 更新が遅れてしまい申し訳ありません。�
 
 > ここから何かを学べることを願っています。
 
-この期間中、[k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) という興味深く強力なリポジトリを発見しました。これは macOS、Windows、Linux、Android、iOS などで12言語の18の音声処理タスクをサポートしています。魅力的です！
+この期間中、[k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) という興味深く強力なリポジトリを発見しました。これは macOS、Windows、Linux、Android、iOS などで 12 言語の 18 の音声処理タスクをサポートしています。魅力的です！
 
 そこで [@luoling](https://github.com/luoling8192) もこのために別の小さなデモを作成しました：[Sherpa ONNX 駆動の VAD + ASR + LLM チャット + TTS](https://github.com/proj-airi/webai-example-realtime-voice-chat/tree/main/apps/sherpa-onnx-demo)
 
@@ -125,7 +125,7 @@ npm install xsai-transformers
 ```
 
 ::: tip これはどういう意味ですか？
-これは、if スイッチ1つで、クラウド LLM や音声プロバイダーと、ローカル WebGPU 駆動モデルを切り替えることができることを意味します。
+これは、if スイッチ 1 つで、クラウド LLM や音声プロバイダーと、ローカル WebGPU 駆動モデルを切り替えることができることを意味します。
 
 これにより、サーバー側のコードやバックエンドサーバーを一切必要とせずに、ブラウザで単純な RAG や再ランキングシステムを実験したり実装したりする新しい可能性がもたらされます。
 
@@ -215,12 +215,12 @@ npm install @velin-dev/core
 ああ...この DevLog は v0.5.0 のリリースも示しているので、過去数週間で達成したいくつかのマイルストーンに言及したいと思います：
 
 - 700 スターを達成しました！
-- 4人以上の新しい issue 貢献者！
-- Discord サーバーに72人以上の新しいグループメンバー！
+- 4 人以上の新しい issue 貢献者！
+- Discord サーバーに 72 人以上の新しいグループメンバー！
 - ReLU キャラクターデザイン完了！
 - ReLU キャラクターモデリング完了！
 - スポンサーシップと協力について数社と交渉しました！
-- [Roadmap v0.5](https://github.com/moeru-ai/airi/issues/113) の92のタスクを完了しました
+- [Roadmap v0.5](https://github.com/moeru-ai/airi/issues/113) の 92 のタスクを完了しました
   - UI
     - ロード画面とチュートリアルモジュール
     - ロード状態や Firefox 互換性の問題を含む複数のバグ修正

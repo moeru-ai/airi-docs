@@ -24,7 +24,7 @@ preview-cover:
 
 > AI VTuber Neuro-sama 再次刷新了 Twitch 有史以来最大的 Hype Train 纪录。
 >
-> 她达到了 123 级，拥有 11 万+ 订阅和超过 100 万 bits。
+> 她达到了 123 级，拥有 11 万 + 订阅和超过 100 万 bits。
 
 生日快乐，Neuro-sama。也恭喜你的创作者 Vedal，以及画师 Camila。能走到这一步令人难以置信，是你们，也是一整个 Swarm，让我站在这里，希望实现我心中的赛博生命形态，让 AIRI 不断成长。
 
@@ -38,7 +38,7 @@ preview-cover:
   - xAI 的 Grok Ani
   - 不错的场景 [gogh](https://store.steampowered.com/app/3213850/gogh/)
   - 还有好的社区与音乐，[Chill with You](https://store.steampowered.com/app/3548580/LoFi/)
-  - 我们还有一份列表：https://github.com/proj-airi/awesome-ai-vtubers ，可以关注更多类似项目
+  - 我们还有一份列表：https://github.com/proj-airi/awesome-ai-vtubers，可以关注更多类似项目
 4. Discord 成员超过 3400+
 
 感谢你们在这一年里与我们一起构建、测试和做梦。愿你的假期平静、热可可香甜。🎁

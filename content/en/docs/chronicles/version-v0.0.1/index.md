@@ -250,7 +250,7 @@ Now can:
   - [ ] Research references
     - [ ] Index sites
       - [ ] [アニメーション | 81-web.com : 日本のWebデザイン・Webサイトギャラリー＆参考サイト・リンク集](https://81-web.com/tag/animation)
-      - [ ] [2021年版イケてるアニメのWebサイト10選(自薦) | Blog | 株式会社イロコト | ゲーム･アニメ等のエンタメ系Web制作&運用会社](https://irokoto.co.jp/blog/20210421/post-20)
+      - [ ] [2021年版イケてるアニメのWebサイト10選(自薦) | Blog | 株式会社イロコト | ゲーム･アニメ等のエンタメ系 Web 制作&運用会社](https://irokoto.co.jp/blog/20210421/post-20)
       - [ ] [漫画･アニメ･ゲーム | SANKOU! | Webデザインギャラリー･参考サイト集](https://sankoudesign.com/category/comic-anime-movie-game-book/)
       - [ ] [KVが動画・アニメーションのWebデザイン参考ギャラリー・リンク集 | Web Design Garden | 毎日更新！Webデザイン参考ギャラリーサイト](https://webdesigngarden.com/category/element/kv-movie/)
     - [ ] [ドーナドーナ いっしょにわるいことをしよう | アリスソフト](https://www.alicesoft.com/dohnadohna/)

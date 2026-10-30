@@ -6,11 +6,11 @@ date: 2025-03-10
 
 ## 似曾相识
 
-在上周五（3月7日），我一直在尝试设计和构思 AIRI 舞台 UI 和设置 UI 的新风格，这个想法终于在开发直播结束时灵光一现。
+在上周五（3 月 7 日），我一直在尝试设计和构思 AIRI 舞台 UI 和设置 UI 的新风格，这个想法终于在开发直播结束时灵光一现。
 
 ## 白天
 
-从3月7日开始，我们开始实现新的设置 UI。在这段时间里我们取得了很大的进展。
+从 3 月 7 日开始，我们开始实现新的设置 UI。在这段时间里我们取得了很大的进展。
 
 包括 [@LemonNekoGH](https://github.com/LemonNekoGH)、[@sumimakito](https://github.com/sumimakito)、[@kwaa](https://github.com/kwaa)、[@luoling8192](https://github.com/luoling8192) 和 [@junkwarrior87](https://github.com/junkwarrior87) 都在为这个项目提供帮助。
 
@@ -41,7 +41,7 @@ date: 2025-03-10
 
 这两个仓库将保持开源并按照惯例使用 MIT 许可证，不用担心。
 
-后来在3月8日，[@junkwarrior87](https://github.com/junkwarrior87) 上线并帮助我们用纯 CSS 制作了舞台上的波浪动画！
+后来在 3 月 8 日，[@junkwarrior87](https://github.com/junkwarrior87) 上线并帮助我们用纯 CSS 制作了舞台上的波浪动画！
 
 > 这简直太疯狂了，我从来没想到这居然能实现！
 
@@ -53,7 +53,7 @@ date: 2025-03-10
 
 非常感谢 [@sumimakito](https://github.com/sumimakito) 和 [@junkwarrior87](https://github.com/junkwarrior87) 帮助修复和改进舞台上的波浪动画，真的很感激你们。
 
-在3月8日结束时，[@LemonNekoGH](https://github.com/LemonNekoGH) 和 [@junkwarrior87](https://github.com/junkwarrior87) 居然实现了整个舞台的颜色自定义功能！（我从来没想过这能在短短几个小时内完成...）
+在 3 月 8 日结束时，[@LemonNekoGH](https://github.com/LemonNekoGH) 和 [@junkwarrior87](https://github.com/junkwarrior87) 居然实现了整个舞台的颜色自定义功能！（我从来没想过这能在短短几个小时内完成...）
 
 <ThemedVideo controls muted src="./assets/customizable-theme-colors.mp4" />
 

@@ -170,7 +170,7 @@ services:
 
 也许您已经知道，我们建立了另一个名为 🥺 SAD（自部署 AI 文档）的文档网站，我们会根据不同模型进行的基准测试结果和效果在文档网站中列出当前的 SOTA 模型，旨在希望能给想要使用消费级设备运行提供建议指导，而嵌入模型是其中最重要的部分。和 ChatGPT 或 DeepSeek V3、DeepSeek R1 等超大大语言模型不同的是，嵌入模型足够小，在只占数百兆字节情况下也可以使用 CPU 设备进行推理。(相比之下，采用 q4 量化的 GGUF 格式的 DeepSeek V3 671B，仍需要 400GiB 以上的存储空间）。
 
-但由于 🥺 SAD 目前仍处于建设中状态，我们将挑选一些在今天（4月6日）看来最新最热的嵌入模型作为推荐：
+但由于 🥺 SAD 目前仍处于建设中状态，我们将挑选一些在今天（4 月 6 日）看来最新最热的嵌入模型作为推荐：
 
 对于开源和专有模型的排行榜：
 
@@ -351,7 +351,7 @@ const combinedScore = sql<number>`((1.2 * ${similarity}) + (0.2 * ${timeRelevanc
   </div>
 </div>
 
-它是完全可交互的，可以在 [drizzle-orm-duckdb-wasm.netlify.app](https://drizzle-orm-duckdb-wasm.netlify.app/#/memory-decay) 这里玩玩看!
+它是完全可交互的，可以在 [drizzle-orm-duckdb-wasm.netlify.app](https://drizzle-orm-duckdb-wasm.netlify.app/#/memory-decay) 这里玩玩看！
 
 #### 情绪也得算进去
 
@@ -373,7 +373,7 @@ const combinedScore = sql<number>`((1.2 * ${similarity}) + (0.2 * ${timeRelevanc
   </div>
 </div>
 
-它依然是完全可交互的，可以在 [drizzle-orm-duckdb-wasm.netlify.app](https://drizzle-orm-duckdb-wasm.netlify.app/#/memory-simulator) 这里体验一下!
+它依然是完全可交互的，可以在 [drizzle-orm-duckdb-wasm.netlify.app](https://drizzle-orm-duckdb-wasm.netlify.app/#/memory-simulator) 这里体验一下！
 
 ## 里程碑
 

@@ -433,7 +433,7 @@ system, and adjustments on the basic WebUI I made randomly, finally, I published
 GitHub on **December 2, 2024** with commit
 [`d9ae0aa`](https://github.com/moeru-ai/airi/commit/d9ae0aae387f015964bfd383e6d2adb05f4003e4).
 
-Project AIRI was somehow born or reborn, with the name of AIRI (アイリ, formerly Airi).
+Project AIRI was somehow born or reborn, with the name of AIRI (アイリ，formerly Airi).
 
 ::: tip Did you know?
 <a href="https://www.youtube.com/watch?v=Tts-YAdn5Yc" class="mb-2 inline-block">

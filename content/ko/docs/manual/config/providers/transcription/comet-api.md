@@ -1,32 +1,32 @@
 ---
 title: CometAPI (ASR/STT)
-description: AIRI에서 CometAPI 음성 인식 설정하기
+description: AIRI 에서 CometAPI 음성 인식 설정하기
 ---
 
-CometAPI는 호환 인터페이스를 통해 오디오 전사를 제공합니다.
+CometAPI 는 호환 인터페이스를 통해 오디오 전사를 제공합니다.
 
-::: info 왜 CometAPI를 선택하나요?
-CometAPI로 모델과 자격 증명을 관리해 본 적이 있다면, 같은 API Key를 AIRI에서 음성 인식에 바로 재사용할 수 있습니다.
+::: info 왜 CometAPI 를 선택하나요?
+CometAPI 로 모델과 자격 증명을 관리해 본 적이 있다면, 같은 API Key 를 AIRI 에서 음성 인식에 바로 재사용할 수 있습니다.
 :::
 
 ## API Key 발급받기
 
-1. [CometAPI 콘솔](https://www.cometapi.com/console/token)에 로그인한 뒤 API Key를 만드세요.
+1. [CometAPI 콘솔](https://www.cometapi.com/console/token)에 로그인한 뒤 API Key 를 만드세요.
 2. 계정이 오디오 전사 모델에 접근할 수 있는지 확인한 뒤 키를 복사해 안전하게 보관하세요.
 
 ::: warning API Key 보안
-API Key를 커밋하거나, 스크린샷에 포함하거나, 누구와도 공유하지 마세요.
+API Key 를 커밋하거나, 스크린샷에 포함하거나, 누구와도 공유하지 마세요.
 :::
 
-## AIRI에서 설정하기
+## AIRI 에서 설정하기
 
-1. **설정 → 제공자 → 전사 → Comet API**를 열고 API Key를 입력하세요.
-2. **모델 이름**에 CometAPI 모델 카탈로그에 있는 정확한 모델 ID를 입력하세요(예: `whisper-1`).
+1. **설정 → 제공자 → 전사 → Comet API**를 열고 API Key 를 입력하세요.
+2. **모델 이름**에 CometAPI 모델 카탈로그에 있는 정확한 모델 ID 를 입력하세요 (예: `whisper-1`).
 3. 기본 Base URL `https://api.cometapi.com/v1/`를 유지하세요. 프록시나 호환 게이트웨이를 사용할 때만 수정하세요.
 
 ## 설정 확인
 
-1. **모델 이름**에 CometAPI 모델 카탈로그의 정확한 모델 ID가 들어 있는지 확인하세요.
+1. **모델 이름**에 CometAPI 모델 카탈로그의 정확한 모델 ID 가 들어 있는지 확인하세요.
 2. 같은 페이지의 플레이그라운드에서 마이크 접근을 허용하고 짧은 샘플을 녹음해 텍스트가 반환되는지 확인하세요.
 
 ## 마이크 전사 활성화하기
@@ -35,4 +35,4 @@ API Key를 커밋하거나, 스크린샷에 포함하거나, 누구와도 공유
 
 ## 문제 해결
 
-플레이그라운드에서 요청이 완료되지 않으면 API Key, 계정 권한, 네트워크 연결을 확인하세요. 텍스트가 표시되지 않으면 AIRI에 마이크 접근 권한이 있는지 확인하세요.
+플레이그라운드에서 요청이 완료되지 않으면 API Key, 계정 권한, 네트워크 연결을 확인하세요. 텍스트가 표시되지 않으면 AIRI 에 마이크 접근 권한이 있는지 확인하세요.

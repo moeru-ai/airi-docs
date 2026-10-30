@@ -1,12 +1,12 @@
 ---
 title: Deepgram (TTS)
-description: AIRI에서 Deepgram 음성 합성 설정하기
+description: AIRI 에서 Deepgram 음성 합성 설정하기
 ---
 
-Deepgram은 AIRI에서 Aura 계열의 음성 합성 모델을 제공합니다.
+Deepgram 은 AIRI 에서 Aura 계열의 음성 합성 모델을 제공합니다.
 
-::: info 왜 Deepgram을 선택하나요?
-이미 Deepgram을 사용하고 있거나 Aura 계열의 음성 중에서 선택하고 싶다면 이 통합을 사용할 수 있습니다.
+::: info 왜 Deepgram 을 선택하나요?
+이미 Deepgram 을 사용하고 있거나 Aura 계열의 음성 중에서 선택하고 싶다면 이 통합을 사용할 수 있습니다.
 :::
 
 ## API Key 발급받기
@@ -16,13 +16,13 @@ Deepgram은 AIRI에서 Aura 계열의 음성 합성 모델을 제공합니다.
 3. 키를 복사해 안전한 곳에 보관하세요.
 
 ::: warning API Key 보안
-API Key를 커밋하거나, 스크린샷에 포함하거나, 누구와도 공유하지 마세요.
+API Key 를 커밋하거나, 스크린샷에 포함하거나, 누구와도 공유하지 마세요.
 :::
 
-## AIRI에서 설정하기
+## AIRI 에서 설정하기
 
-1. **설정 → 제공자 → 음성 합성 → Deepgram**을 열고 API Key를 붙여넣으세요.
-2. 기본 Base URL은 Deepgram의 직접 API가 아니라 AIRI/UnSpeech 게이트웨이인 `https://unspeech.hyp3r.link/v1/`입니다. API Key, 합성할 텍스트, 모델/음성 선택, 반환된 오디오가 모두 이 게이트웨이를 거칩니다. 이 신뢰 경계를 수용할 수 있는 경우에만 사용하고, 그렇지 않으면 호환되는 자체 호스팅 게이트웨이 URL을 입력하거나 직접 연결되는 제공자를 선택하세요.
+1. **설정 → 제공자 → 음성 합성 → Deepgram**을 열고 API Key 를 붙여넣으세요.
+2. 기본 Base URL 은 Deepgram 의 직접 API 가 아니라 AIRI/UnSpeech 게이트웨이인 `https://unspeech.hyp3r.link/v1/`입니다. API Key, 합성할 텍스트, 모델/음성 선택, 반환된 오디오가 모두 이 게이트웨이를 거칩니다. 이 신뢰 경계를 수용할 수 있는 경우에만 사용하고, 그렇지 않으면 호환되는 자체 호스팅 게이트웨이 URL 을 입력하거나 직접 연결되는 제공자를 선택하세요.
 
 ## 설정 확인
 

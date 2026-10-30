@@ -35,7 +35,7 @@ date: 2025-04-14
 
 获取查询中用户指定的查询词权重最大值，也叫做 score boost 函数。
 如果输入的 关键字 在分词前，命中了文档中（比如标题，正文这两个字段）里面的「内容」。
-比如 搜索 「如何制作 Neurosama」，那 Neurosama 这几个字出现的文档和页面的分数应该要比 Neuro + sama 分开出现的分数高才对。
+比如 搜索「如何制作 Neurosama」，那 Neurosama 这几个字出现的文档和页面的分数应该要比 Neuro + sama 分开出现的分数高才对。
 
 #### `timeliness`, `timeliness_ms`
 
@@ -86,7 +86,7 @@ Data Transformation Services，是用于业务数据库和 Search Engine Instanc
 
 ### 什么是重排？
 
-reranking 的意义在于，如果我们只是根据 embedding 模型给出的向量去进行 ANN（Approximate Nearest Neighbor） 和 KNN（K-Nearest Neighbor） 向量距离排序的话，事实上是会有失偏颇的。
+reranking 的意义在于，如果我们只是根据 embedding 模型给出的向量去进行 ANN（Approximate Nearest Neighbor）和 KNN（K-Nearest Neighbor）向量距离排序的话，事实上是会有失偏颇的。
 
 因为先前在 OpenSearch 的时候介绍的 exact_match_boost 和 timeness 函数就不存在了。
 

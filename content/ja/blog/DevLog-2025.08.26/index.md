@@ -16,7 +16,7 @@ import NmsIou from '../../../en/blog/DevLog-2025.08.26/components/nms-iou.vue'
 
 前回の [DevLog](../DevLog-2025.07.18/index.md) で、[Factorio Learning Environment](https://arxiv.org/abs/2503.09617) の論文を軽く見て、`airi-factorio` をどのように改善する予定かについて簡単に話しました。しかし...今日皆さんと共有したいのはそれではなく、純粋な視覚方向の進捗状況についてです。
 
-今年の6月、[@nekomeowww](https://github.com/nekomeowww) がほぼリアルタイムの [VLM Playground](https://huggingface.co/spaces/moeru-ai/smolvlm-realtime-webgpu-vue) HuggingFace Spaces をリリースしました。これは非常にクールだと感じたので、まずは単純なリアルタイム画像認識（当時は物体検出と画像認識を混同していました）を試して、何らかの方法で AI に意思決定を任せ、最終的に何らかの方法でアクションを出力してゲームに実行させることにしました。
+今年の 6 月、[@nekomeowww](https://github.com/nekomeowww) がほぼリアルタイムの [VLM Playground](https://huggingface.co/spaces/moeru-ai/smolvlm-realtime-webgpu-vue) HuggingFace Spaces をリリースしました。これは非常にクールだと感じたので、まずは単純なリアルタイム画像認識（当時は物体検出と画像認識を混同していました）を試して、何らかの方法で AI に意思決定を任せ、最終的に何らかの方法でアクションを出力してゲームに実行させることにしました。
 
 まずは成果をお見せします：
 

@@ -3,14 +3,14 @@ title: DevLog @ 2026.02.16
 category: DevLog
 date: 2026-02-16
 excerpt: |
-  Sharing LemonNeko’s recent progress on the Dome Keeper direction.
+  Sharing LemonNeko's recent progress on the Dome Keeper direction.
 ---
 
-Happy Lunar New Year’s Eve! This is [@LemonNekoGH](https://github.com/LemonNekoGH) — I’ll be writing the last DevLog before Spring Festival.
+Happy Lunar New Year's Eve! This is [@LemonNekoGH](https://github.com/LemonNekoGH) — I’ll be writing the last DevLog before Spring Festival.
 
 ## Recap
 
-In last year’s [DevLog](../DevLog-2025.08.26/index.md), we shared progress on the pure-vision direction of `airi-factorio`. Today I want to share what we’ve been doing on the Dome Keeper direction.
+In last year's [DevLog](../DevLog-2025.08.26/index.md), we shared progress on the pure-vision direction of `airi-factorio`. Today I want to share what we’ve been doing on the Dome Keeper direction.
 
 Wait, LemonNeko? Why not keep going on `airi-factorio`?
 
@@ -20,7 +20,7 @@ Honestly, I chickened out — Factorio is too open-ended and complex for me to c
 
 So what have we done so far?
 
-1. Wrote a mod to collect data. After installing the mod, you’ll see a `Start YOLO Data Collection` button in the pause menu. Click it to start collecting.
+1. Wrote a mod to collect data. After installing the mod, you'll see a `Start YOLO Data Collection` button in the pause menu. Click it to start collecting.
 
     ![add-button-to-menu](./assets/add-button-to-menu.avif)
 
@@ -28,7 +28,7 @@ So what have we done so far?
 
     ![some-collected-data](./assets/some-collected-data.avif)
 
-It’s not much yet, but we already hit quite a few pitfalls and details worth recording — hence this DevLog.
+It's not much yet, but we already hit quite a few pitfalls and details worth recording — hence this DevLog.
 
 ### Details
 
@@ -38,11 +38,11 @@ It’s not much yet, but we already hit quite a few pitfalls and details worth r
 
 - Sampling strategy.
 
-    Our initial strategy was to capture one frame every 0.5s, but often there are no targets in the frame. That produced too many “negative samples” — the dataset size grows, but the effective information density drops.
+    Our initial strategy was to capture one frame every 0.5s, but often there are no targets in the frame. That produced too many "negative samples" — the dataset size grows, but the effective information density drops.
 
-    We later changed the rule: only frames containing `enemy` or `ore_*` count as “target frames”, and **we only allow 1 no‑target frame after 5 target frames**. This keeps a bit of background while avoiding a diluted dataset.
+    We later changed the rule: only frames containing `enemy` or `ore_*` count as "target frames", and **we only allow 1 no‑target frame after 5 target frames**. This keeps a bit of background while avoiding a diluted dataset.
 
-- UI overlay causing “wrong labels”.
+- UI overlay causing "wrong labels".
 
     When the pause menu or upgrade panel (TechTree) is open, the UI covers the scene, but our labels still mark ores and enemies. This is tricky to notice because the label files look normal, and you only see the issue during visualization.
 
@@ -83,4 +83,4 @@ Remember the pure‑vision Playground in the `airi-factorio` repo? I plan to ext
 
 Stay tuned for the next update. Oh — the mod code is already open‑sourced, feel free to [try it out](https://github.com/proj-airi/game-playing-ai-dome-keeper)!
 
-Happy Lunar New Year’s Eve!
+Happy Lunar New Year's Eve!

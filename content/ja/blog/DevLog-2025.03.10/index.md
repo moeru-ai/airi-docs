@@ -6,11 +6,11 @@ date: 2025-03-10
 
 ## 既視感
 
-先週の金曜日（3月7日）、AIRI のステージ UI と設定 UI の新しいスタイルをデザイン・構想しようとしていましたが、開発配信の終了間際にようやくアイデアが閃きました。
+先週の金曜日（3 月 7 日）、AIRI のステージ UI と設定 UI の新しいスタイルをデザイン・構想しようとしていましたが、開発配信の終了間際にようやくアイデアが閃きました。
 
 ## 日中
 
-3月7日から、新しい設定 UI の実装を開始しました。この期間中に大きな進歩を遂げました。
+3 月 7 日から、新しい設定 UI の実装を開始しました。この期間中に大きな進歩を遂げました。
 
 [@LemonNekoGH](https://github.com/LemonNekoGH)、[@sumimakito](https://github.com/sumimakito)、[@kwaa](https://github.com/kwaa)、[@luoling8192](https://github.com/luoling8192)、そして [@junkwarrior87](https://github.com/junkwarrior87) がこのプロジェクトに協力してくれています。
 
@@ -39,9 +39,9 @@ date: 2025-03-10
 - https://github.com/proj-airi/webai-examples：WebGPU や関連コンテンツのデモ制作用。
 - https://github.com/proj-airi/lobe-icons：[Lobe Icons](https://github.com/lobehub/lobe-icons) の移植版で、Iconify JSON と UnoCSS で使用できます。
 
-これら2つのリポジトリはオープンソースのままであり、通常通り MIT ライセンスを使用しますのでご心配なく。
+これら 2 つのリポジトリはオープンソースのままであり、通常通り MIT ライセンスを使用しますのでご心配なく。
 
-その後、3月8日に [@junkwarrior87](https://github.com/junkwarrior87) がオンラインになり、純粋な CSS でステージ上の波のアニメーションを作成するのを手伝ってくれました！
+その後、3 月 8 日に [@junkwarrior87](https://github.com/junkwarrior87) がオンラインになり、純粋な CSS でステージ上の波のアニメーションを作成するのを手伝ってくれました！
 
 > これは本当にクレイジーです。こんなことが実現できるなんて思ってもみませんでした！
 
@@ -53,7 +53,7 @@ date: 2025-03-10
 
 ステージ上の波のアニメーションの修正と改善に協力してくれた [@sumimakito](https://github.com/sumimakito) と [@junkwarrior87](https://github.com/junkwarrior87) に深く感謝します。
 
-3月8日の終わりには、[@LemonNekoGH](https://github.com/LemonNekoGH) と [@junkwarrior87](https://github.com/junkwarrior87) がなんとステージ全体のカラーカスタマイズ機能を実装しました！（これがわずか数時間で完成するとは夢にも思いませんでした...）
+3 月 8 日の終わりには、[@LemonNekoGH](https://github.com/LemonNekoGH) と [@junkwarrior87](https://github.com/junkwarrior87) がなんとステージ全体のカラーカスタマイズ機能を実装しました！（これがわずか数時間で完成するとは夢にも思いませんでした...）
 
 <ThemedVideo controls muted src="/en/blog/DevLog-2025.03.10/assets/customizable-theme-colors.mp4" />
 
@@ -64,7 +64,7 @@ date: 2025-03-10
 
 彼らはロゴさえもカスタムカラーに合わせて変化するようにしました 🤯。
 
-> この3日間でさらに多くの改善を行いました。おそらく、これらの素晴らしい貢献者たちが、いくつかのアイデアを共有するための専用の開発ログを書いてくれるかもしれません。お楽しみに！
+> この 3 日間でさらに多くの改善を行いました。おそらく、これらの素晴らしい貢献者たちが、いくつかのアイデアを共有するための専用の開発ログを書いてくれるかもしれません。お楽しみに！
 
 これが最終的な結果です。試してみてください！
 

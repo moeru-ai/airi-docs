@@ -71,7 +71,7 @@ import DemoDayHangzhou3 from './assets/demo-day-hangzhou-3.avif'
 <img class="light" :src="CharacterCardShowcaseLight" alt="一个名为 ReLU 的蓝发角色的卡片式用户界面设计" />
 <img class="dark" :src="CharacterCardShowcaseDark" alt="一个名为 ReLU 的蓝发角色的卡片式用户界面设计" />
 
-它在我们的 UI 组件库中是实时的，你可以在这里玩玩：https://airi.moeru.ai/ui/#/story/src-components-menu-charactercard-story-vue 。
+它在我们的 UI 组件库中是实时的，你可以在这里玩玩：https://airi.moeru.ai/ui/#/story/src-components-menu-charactercard-story-vue。
 
 > 纯 CSS 和 JavaScript 控制，布局有效，所以我们不需要担心画布计算。
 >

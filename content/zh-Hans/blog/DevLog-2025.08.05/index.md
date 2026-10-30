@@ -203,7 +203,7 @@ Tamagotchi 是 AIRI 桌面版本的名称，你可以让它作为独立的、
 获得更好的体验。
 
 他们在 Pull Request 合并后写了一篇博客来分享
-贡献 Project AIRI 的经验：[AIRIプロジェクトに参加した話 - YAMA-blog](https://yama-pro.blog/posts/airi/)
+贡献 Project AIRI 的经验：[AIRI プロジェクトに参加した話 - YAMA-blog](https://yama-pro.blog/posts/airi/)
 
 <img class="light" src="./assets/airi-demo-onboarding-light.avif" alt="引导界面亮色模式" />
 <img class="dark" src="./assets/airi-demo-onboarding-dark.avif" alt="引导界面暗色模式" />

@@ -44,7 +44,7 @@ onMounted(async () => {
 
 ![](/en/blog/DevLog-2025.03.05/assets/airi-logo-v2-dark.avif)
 
-[@kwaa](https://github.com/kwaa) が、2つのテーマの配色を入れ替えてみてはどうかと提案してくれました：
+[@kwaa](https://github.com/kwaa) が、2 つのテーマの配色を入れ替えてみてはどうかと提案してくれました：
 
 ![](/en/blog/DevLog-2025.03.05/assets/airi-logos-v3.avif)
 

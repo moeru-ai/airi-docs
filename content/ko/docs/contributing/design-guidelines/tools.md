@@ -1,6 +1,6 @@
 ---
 title: 도구
-description: Project AIRI의 UI, UX를 디자인하기 위한 도구들
+description: Project AIRI 의 UI, UX 를 디자인하기 위한 도구들
 ---
 
 ## 색상
@@ -11,7 +11,7 @@ description: Project AIRI의 UI, UX를 디자인하기 위한 도구들
 
 일반적으로 기본 테마에는 `neutral`, `pink`, `violet`, `cyan`을 사용합니다. [UnoCSS](https://unocss.dev)와 [Tailwind](https://tailwindcss.com) 모두 색상에 투명도를 조절하는 기능을 지원하지만, [Refactoring UI](https://refactoringui.com/)에 따르면:
 
-> 색의 채도를 바꾸고 싶을 때는 투명도를 쓰기보다, 대비가 가장 좋은 불투명한(알파 채널이 없는) 색을 직접 골라야 합니다.
+> 색의 채도를 바꾸고 싶을 때는 투명도를 쓰기보다, 대비가 가장 좋은 불투명한 (알파 채널이 없는) 색을 직접 골라야 합니다.
 
 그러니 투명도가 타이포그래피 디자인의 일부가 아닌 이상, 가독성을 위해 가장 알맞은 불투명 색상을 골라 주세요.
 

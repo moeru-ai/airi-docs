@@ -1,5 +1,5 @@
 ---
-title: Microsoft Azure Speech（TTS）
+title: Microsoft Azure Speech (TTS)
 description: 在 AIRI 中配置 Microsoft Azure Speech 语音合成
 ---
 

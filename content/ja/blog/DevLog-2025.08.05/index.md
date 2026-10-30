@@ -3,7 +3,7 @@ title: DevLog @ 2025.08.05
 description: |
   v0.7 バージョンリリース。Windows が完全にサポートされ、より多くの機能が含まれています。
 date: 2025-08-04
-excerpt: お待たせしました！<br/> v0.7 は当初7月初旬にリリース予定でしたが、Windows でのいくつかの重要なバグ発見と、さらなる適応作業のため、今まで延期されていました。
+excerpt: お待たせしました！<br/> v0.7 は当初 7 月初旬にリリース予定でしたが、Windows でのいくつかの重要なバグ発見と、さらなる適応作業のため、今まで延期されていました。
 preview-cover:
   light: "@assets('/en/blog/DevLog-2025.08.05/assets/cover-light.avif')"
   dark: "@assets('/en/blog/DevLog-2025.08.05/assets/cover-dark.avif')"
@@ -19,7 +19,7 @@ function handleOpenLatest() {
 
 こんにちは！[Neko](https://github.com/nekomeowww) です。
 
-お待たせしました！v0.7 は当初7月初旬にリリース予定でしたが、
+お待たせしました！v0.7 は当初 7 月初旬にリリース予定でしたが、
 私たちを眠らせなかったいくつかの Windows 互換性の問題と、
 対処することを決定した巨大な変更範囲のため、今まで延期されていました。
 
@@ -27,14 +27,14 @@ function handleOpenLatest() {
   ダウンロード
 </Button>
 
-それでも、過去2か月間準備してきた内容をついに皆さんと共有できることに興奮しています。
+それでも、過去 2 か月間準備してきた内容をついに皆さんと共有できることに興奮しています。
 
 興味があるかもしれない以前のブログと DevLog 記事をご覧ください：
 
 - [DreamLog 0x1](../DreamLog-0x1/)
 - [DevLog @ 2025.05.16](../DevLog-2025.05.16/)
 
-過去3ヶ月の状況を正直にお話ししましょう：
+過去 3 ヶ月の状況を正直にお話ししましょう：
 
 - [**391 コミット**](https://github.com/moeru-ai/airi/compare/v0.6.1...v0.7.0)
 - [**1017 ファイル変更**](https://github.com/moeru-ai/airi/compare/v0.6.1...v0.7.0)
@@ -56,7 +56,7 @@ v0.7 のリリースとこの DevLog の公開に伴い、
 - 300+ 以上の Discord メンバーがいます！👾
 - [Hacker News](https://news.ycombinator.com/item?id=44573640) で自己紹介を公開しました
 - [Product Hunt](https://www.producthunt.com/products/airi) で自己紹介を公開しました
-- 2025年7月17日の GitHub トレンドで `#1` にランクインしました 🏆
+- 2025 年 7 月 17 日の GitHub トレンドで `#1` にランクインしました 🏆
 
 ## 機能
 
@@ -90,7 +90,7 @@ Tamagotchi は AIRI デスクトップ版の名前です。
 多くのユーザーは、カーソルがキャラクターの上に止まるたびにウィンドウ全体がフェードアウトすることに混乱していました。
 この機能と、なぜ私たちが AI コンパニオンにとって重要だと考えているのかを説明するドキュメントが不足していたことをお詫びします。
 
-VTuber アプリケーションの場合、最も人気のある VTuber Studio、Warudo の2つは
+VTuber アプリケーションの場合、最も人気のある VTuber Studio、Warudo の 2 つは
 Live2D と VRM 3D モデルをサポートしています。これらは VTuber ストリーミング目的で設計されているため、
 OBS (Open Broadcaster Software) を使用してストリーミングする場合、
 異なるレイヤーでシーン要素を編成できるため、ユーザーはウィンドウの順序を気にする必要はありません：
@@ -196,7 +196,7 @@ Windows と Linux 向けに candle ランタイム（CUDA ありとなし）を�
 Web 版にオンボーディングサポートが追加されました。これで、初めて AIRI を使用するときに
 より良い体験を得ることができます。
 
-彼らは Pull Request がマージされた後、Project AIRI に貢献した経験を共有するためにブログ記事を書きました：[AIRIプロジェクトに参加した話 - YAMA-blog](https://yama-pro.blog/posts/airi/)
+彼らは Pull Request がマージされた後、Project AIRI に貢献した経験を共有するためにブログ記事を書きました：[AIRI プロジェクトに参加した話 - YAMA-blog](https://yama-pro.blog/posts/airi/)
 
 <img class="light" src="/en/blog/DevLog-2025.08.05/assets/airi-demo-onboarding-light.avif" alt="オンボーディング ライトモード" />
 <img class="dark" src="/en/blog/DevLog-2025.08.05/assets/airi-demo-onboarding-dark.avif" alt="オンボーディング ダークモード" />
@@ -295,8 +295,8 @@ Web 版にオンボーディングサポートが追加されました。これ�
 
 - [x] `<Progress />`（@Menci に感謝 [2cb602aa](https://github.com/moeru-ai/airi/commit/2cb602aa3eac456a479b622a5ecf043831597ffe)）
 - [x] `<FieldSelect />` ([d0d782ff](https://github.com/moeru-ai/airi/commit/d0d782ff94a5a0a12819725303f687bd1a47e87c))
-- [x] `<Alert />`（[@typed-sigterm](https://github.com/typed-sigterm) に感謝, [#295](https://github.com/moeru-ai/airi/pull/295)）
-- [x] `<ErrorContainer />`（[@typed-sigterm](https://github.com/typed-sigterm) に感謝, [#295](https://github.com/moeru-ai/airi/pull/295)）
+- [x] `<Alert />`（[@typed-sigterm](https://github.com/typed-sigterm) に感謝，[#295](https://github.com/moeru-ai/airi/pull/295)）
+- [x] `<ErrorContainer />`（[@typed-sigterm](https://github.com/typed-sigterm) に感謝，[#295](https://github.com/moeru-ai/airi/pull/295)）
 - [x] 新しいサイドバーナビゲーションデザイン
 - [x] メッセージトースター
 - [x] 新しいバージョンがあるときにユーザーに更新を促す
@@ -353,7 +353,7 @@ Web 版にオンボーディングサポートが追加されました。これ�
   └── index.ts
 ```
 
-`docs` と `tamagotchi` は、異なるモジュール専用の2つのディレクトリです：
+`docs` と `tamagotchi` は、異なるモジュール専用の 2 つのディレクトリです：
 
 - ドキュメントサイト
 - デスクトップ版（Tamagotchi）
@@ -461,11 +461,11 @@ TL;DR：
 これにより、厄介な
 `The requested module './dist/index.mjs' does not provide an export named 'foo'` エラーと戦う必要のない、よりクリーンなワークフローが得られました。
 
-最大の変更は2か月前、[@kwaa](https://github.com/kwaa) が `vite` の代わりに `rolldown-vite` に切り替えることを選択したときに起こりました。
-これにより、**ワークフローが2倍高速化**されました。
+最大の変更は 2 か月前、[@kwaa](https://github.com/kwaa) が `vite` の代わりに `rolldown-vite` に切り替えることを選択したときに起こりました。
+これにより、**ワークフローが 2 倍高速化**されました。
 
-しかし、これで終わりではありません。`unbuild` を `tsdown` に置き換えました。これにより、**さらに4.2倍の速度向上が導入**され、
-各サブパッケージのビルド時間は250ミリ秒未満になりました。
+しかし、これで終わりではありません。`unbuild` を `tsdown` に置き換えました。これにより、**さらに 4.2 倍の速度向上が導入**され、
+各サブパッケージのビルド時間は 250 ミリ秒未満になりました。
 
 > `tsdown` への移行にはさらに多くの利点があります...
 >
@@ -476,7 +476,7 @@ TL;DR：
 現在、`postinstall` スクリプトはまだ必要ですが、
 依存関係認識を通じてビルド結果をキャッシュする方法を見つけることができれば、多くの冗長なビルドを回避できます。
 ここで `turborepo` がより高速なビルドを実現するのに役立ちます。
-`turborepo` を使用すると、AIRI のビルドに必要な時間が**平均4分から25秒に短縮**されました。
+`turborepo` を使用すると、AIRI のビルドに必要な時間が**平均 4 分から 25 秒に短縮**されました。
 
 ### Nix をサポート
 

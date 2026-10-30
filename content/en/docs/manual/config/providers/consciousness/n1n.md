@@ -20,7 +20,7 @@ Even though the API Key is optional, don't expose your private service address, 
 ## Configure in AIRI
 
 1. Open **Settings → Providers → Chat → n1n**. The default Base URL is `https://api.n1n.ai/v1/`.
-2. Fill in the API Key according to n1n’s current service requirements; if your deployment allows anonymous access, leave it blank according to the deployer’s instructions.
+2. Fill in the API Key according to n1n's current service requirements; if your deployment allows anonymous access, leave it blank according to the deployer's instructions.
 
 ## Verify configuration
 

@@ -60,7 +60,7 @@ Control Island
 
 我们曾分享过 [Netlify](https://velin-dev.netlify.app/#/) ，一个允许在浏览器里用 Vercel AI SDK 类似的方式进行纯本地推理的项目
 
-这些本地推理都只能在 Web Worker / worker_thread 中实现，而他们又都是事件通信，Electron IPC 也如此工作，但我们觉得这都不够优雅，还是感谢 RainbowBird ，用来驱动和实现基于事件的 IPC/RPC 的库，[Eventa](https://github.com/moeru-ai/eventa)，现在也是 Moeru AI 的一员了
+这些本地推理都只能在 Web Worker / worker_thread 中实现，而他们又都是事件通信，Electron IPC 也如此工作，但我们觉得这都不够优雅，还是感谢 RainbowBird，用来驱动和实现基于事件的 IPC/RPC 的库，[Eventa](https://github.com/moeru-ai/eventa)，现在也是 Moeru AI 的一员了
 
 ## 项目发展现状
 
@@ -84,7 +84,7 @@ Project AIRI
 
 4080S 差不多 5s 推一次，很喜欢
 
-几乎是在Rust里 1:1 对着 Python 的模型架构实现了一遍，希望能够依托其他 SOTA 的 TTS 模型变成一个很精简的本地 TTS 推理引擎
+几乎是在 Rust 里 1:1 对着 Python 的模型架构实现了一遍，希望能够依托其他 SOTA 的 TTS 模型变成一个很精简的本地 TTS 推理引擎
 
 <img src="./assets/rust-tts.avif" alt="rust-tts.avif" />
 

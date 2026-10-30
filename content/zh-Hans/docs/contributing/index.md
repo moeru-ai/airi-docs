@@ -192,7 +192,7 @@ git remote add upstream https://github.com/moeru-ai/airi.git
 * 点击 **Pull requests** 按钮；
 * 再点击 **New pull request** 按钮；
 * 选择 **Compare across forks** 链接；
-* 然后选择你自己fork的代码仓库。
+* 然后选择你自己 fork 的代码仓库。
 
 请检查并确认你的改动，最后点击 **Create pull request** 按钮完成拉取请求创建。
 

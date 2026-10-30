@@ -3,7 +3,7 @@ title: Configure chat model
 description: Configuring chat providers and models for AIRI
 ---
 
-The chat model is AIRI's “brain.” To generate text replies, AIRI needs either a provider account with chat-model access or a running local model service.
+The chat model is AIRI's "brain." To generate text replies, AIRI needs either a provider account with chat-model access or a running local model service.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ When you are not sure which one to choose, start with [OpenRouter](./providers/c
 
 AIRI loads the model list when the provider supports it. If the list cannot be loaded and the field accepts custom input, enter the exact model ID from the provider's official documentation.
 
-5. Return to the chat interface and send a short message, such as “Hello.” A reply confirms that the provider and model are working.
+5. Return to the chat interface and send a short message, such as "Hello." A reply confirms that the provider and model are working.
 
 ## Troubleshooting
 

@@ -15,7 +15,7 @@ description: Project AIRI への貢献
 <details>
 <summary>Windows のセットアップ</summary>
 
-0. [Visual Studio](https://visualstudio.microsoft.com/downloads/) をダウンロードし、こちらの指示に従ってください: https://rust-lang.github.io/rustup/installation/windows-msvc.html#walkthrough-installing-visual-studio-2022
+0. [Visual Studio](https://visualstudio.microsoft.com/downloads/) をダウンロードし、こちらの指示に従ってください：https://rust-lang.github.io/rustup/installation/windows-msvc.html#walkthrough-installing-visual-studio-2022
 
    > Visual Studio をインストールする際、Windows SDK と C++ ビルドツールを必ずインストールしてください。
 

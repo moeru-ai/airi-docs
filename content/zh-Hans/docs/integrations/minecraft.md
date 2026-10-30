@@ -23,7 +23,7 @@ pnpm i
 
 ::: warning 凭据安全
 API Key、服务地址和 Minecraft 服务器凭据只应保存在本地 **.env.local** 文件中。不要提交、截图或发送这些配置。
-这里配置的 API Key 与 AIRI 本体不相同且不互通，建议为 Minecraft 服务配置独立的Key。
+这里配置的 API Key 与 AIRI 本体不相同且不互通，建议为 Minecraft 服务配置独立的 Key。
 :::
 
 ## 配置
@@ -42,18 +42,18 @@ AIRI_CLIENT_NAME=minecraft-bot
 AIRI_WS_TOKEN=<Auth Token from Settings → Connection>
 ~~~
 
-以下是必填的字段以及填写说明（以deeepseek为例）
+以下是必填的字段以及填写说明（以 deeepseek 为例）
 
 | 字段 | 含义 | 填写建议 |
 | --- | --- | --- |
 | OPENAI_API_BASEURL | 服务商 API 的根地址 | 如 https://api.deepseek.com 注意不需要加chat/completions后缀 |
 | OPENAI_API_KEY | 服务商签发的访问令牌 | 在两个引号间直接粘贴完整密钥 |
-| OPENAI_MODEL | 默认模型 ID | 填写通用模型 ID ，如 deepseek-v4-flash |
+| OPENAI_MODEL | 默认模型 ID | 填写通用模型 ID，如 deepseek-v4-flash |
 | OPENAI_REASONING_MODEL | 思考模型 ID | 一般选择支持思考的、更强大的模型，如 deepseek-v4-pro |
 | BOT_USERNAME | 机器人的游戏名称 | 尽量仅由数字、字母、下划线组成 |
-| BOT_HOSTNAME | 服务器地址 | 填写服务器地址或者ip，若为本地服务器填localhost |
-| BOT_PORT | 服务器端口 | 一般是25565，填写服务器实际对外暴露的端口号 |
-| BOT_VERSION | 服务器版本 | 填写Minecraft版本号，如1.21.1 |
+| BOT_HOSTNAME | 服务器地址 | 填写服务器地址或者 ip，若为本地服务器填 localhost |
+| BOT_PORT | 服务器端口 | 一般是 25565，填写服务器实际对外暴露的端口号 |
+| BOT_VERSION | 服务器版本 | 填写 Minecraft 版本号，如 1.21.1 |
 
 默认离线登录，如需正版登录参考 **integrations/minecraft/.env** 中说明。
 

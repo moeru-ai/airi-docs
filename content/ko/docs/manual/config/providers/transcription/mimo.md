@@ -1,26 +1,26 @@
 ---
 title: Xiaomi MiMo (ASR/STT)
-description: AIRI에서 Xiaomi MiMo 음성 인식 설정하기
+description: AIRI 에서 Xiaomi MiMo 음성 인식 설정하기
 ---
 
-MiMo는 자체 오디오 이해 모델을 사용해 음성 전사를 수행합니다.
+MiMo 는 자체 오디오 이해 모델을 사용해 음성 전사를 수행합니다.
 
-::: info 왜 Xiaomi MiMo를 선택하나요?
-이미 MiMo를 사용하고 있거나, MiMo의 멀티모달 모델로 오디오 콘텐츠를 처리하고 싶다면 이 서비스 제공자를 선택할 수 있습니다.
+::: info 왜 Xiaomi MiMo 를 선택하나요?
+이미 MiMo 를 사용하고 있거나, MiMo 의 멀티모달 모델로 오디오 콘텐츠를 처리하고 싶다면 이 서비스 제공자를 선택할 수 있습니다.
 :::
 
 ## API Key 발급받기
 
 1. [Xiaomi MiMo Platform](https://platform.xiaomimimo.com/)에 로그인한 뒤, 계정에 API 접근이 활성화되어 있는지 확인하세요.
-2. API Key를 생성하고 복사해 안전한 곳에 보관하세요.
+2. API Key 를 생성하고 복사해 안전한 곳에 보관하세요.
 
-::: warning API Key와 오디오 데이터
-API Key를 노출하지 마세요. 클라우드 전사는 오디오를 제공자에게 전송해 처리하므로, 이것이 개인정보 및 데이터 처리 요구 사항에 부합하는지 확인하세요.
+::: warning API Key 와 오디오 데이터
+API Key 를 노출하지 마세요. 클라우드 전사는 오디오를 제공자에게 전송해 처리하므로, 이것이 개인정보 및 데이터 처리 요구 사항에 부합하는지 확인하세요.
 :::
 
-## AIRI에서 설정하기
+## AIRI 에서 설정하기
 
-1. **설정 → 제공자 → 전사 → Xiaomi MiMo**에 API Key를 입력하세요.
+1. **설정 → 제공자 → 전사 → Xiaomi MiMo**에 API Key 를 입력하세요.
 2. 서비스 제공자가 다른 주소를 제공하지 않는 한 기본 Base URL `https://api.xiaomimimo.com/v1/`를 유지하세요.
 
 ## 설정 확인
@@ -34,4 +34,4 @@ API Key를 노출하지 마세요. 클라우드 전사는 오디오를 제공자
 
 ## 문제 해결
 
-요청이 실패하면 API Key, 모델 선택, 네트워크 연결을 확인하세요. 텍스트가 반환되지 않으면 AIRI에 마이크 권한이 있는지 확인하세요.
+요청이 실패하면 API Key, 모델 선택, 네트워크 연결을 확인하세요. 텍스트가 반환되지 않으면 AIRI 에 마이크 권한이 있는지 확인하세요.

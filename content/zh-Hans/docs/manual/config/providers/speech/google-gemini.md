@@ -1,5 +1,5 @@
 ---
-title: Google Gemini（TTS）
+title: Google Gemini (TTS)
 description: 在 AIRI 中配置 Google Gemini 音频语音合成
 ---
 

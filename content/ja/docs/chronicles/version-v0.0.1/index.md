@@ -2,8 +2,8 @@
 title: 前日譚 v0.0.1
 ---
 
-- [x] プロジェクト作成 - 完了、Vitesse Lite と Vue を使用して作成 (2024年6月7日)
-- [x] フロントエンド Live2D 統合 - [Pixi.js レンダラーを使用した Vue アプリケーションへの Live2D モデルの統合](https://nolebase.ayaka.io/to/3cae2b7c0b) にて完了 (2024年6月7日)
+- [x] プロジェクト作成 - 完了、Vitesse Lite と Vue を使用して作成 (2024 年 6 月 7 日)
+- [x] フロントエンド Live2D 統合 - [Pixi.js レンダラーを使用した Vue アプリケーションへの Live2D モデルの統合](https://nolebase.ayaka.io/to/3cae2b7c0b) にて完了 (2024 年 6 月 7 日)
   - [x] Live2D Cubism SDK 統合
   - [x] pixi.js レンダリング
   - [x] モデルのダウンロード
@@ -11,22 +11,22 @@ title: 前日譚 v0.0.1
 
 ![](/assets/version-v0.0.1/screenshot-1.avif)
 
-- [x] Vercel AI SDK を介した GPT-4o の統合 (2024年6月7日)
+- [x] Vercel AI SDK を介した GPT-4o の統合 (2024 年 6 月 7 日)
   - [x] `@ai-sdk/openai`
   - [x] `ai`
-- [x] ストリーミングトークン送信 (2024年6月8日)
-- [x] ストリーミングトークン受信 (2024年6月8日)
-- [x] ストリーミング TTS (2024年6月8日)
+- [x] ストリーミングトークン送信 (2024 年 6 月 8 日)
+- [x] ストリーミングトークン受信 (2024 年 6 月 8 日)
+- [x] ストリーミング TTS (2024 年 6 月 8 日)
   - [x] [node.js - Elevenlabs Streaming API から来るストリーミングオーディオを適切に処理するには？ - Stack Overflow](https://stackoverflow.com/questions/76854884/how-to-properly-handle-streaming-audio-coming-from-elevenlabs-streaming-api)
   - [x] [Stream Response - Getting Started - h3 (unjs.io)](https://h3.unjs.io/examples/stream-response)
   - [x] ~~GPT-SoVITS 設定~~ (これは少し複雑なので、時間があるときにサンプルに取り組みます)
-- [x] リップシンク (2024年6月9日)
+- [x] リップシンク (2024 年 6 月 9 日)
   - [x] 音量に基づいて口の開き具合を決定
     - [x] Math.pow 比率で音量曲線を増幅
     - [x] 線形正規化
     - [x] MinMax 正規化
     - [x] ~~SoftMax 正規化~~ (効果が良くなかった、出力データがすべて 0.999999 から 1.000001 の範囲になった)
-- [x] ストリーミングトークンからストリーミング TTS へ (2024年6月9日)
+- [x] ストリーミングトークンからストリーミング TTS へ (2024 年 6 月 9 日)
   - [x] 句読点とスペース + 文字数制限の組み合わせに基づいて文を構築し、TTS 推論を実装できるようです
     - [x] ~~11Labs は WebSocket ベース~~
     - [x] TTS ストリームリクエストをキュー経由で発行し、オーディオストリームキューに入れる
@@ -49,10 +49,10 @@ title: 前日譚 v0.0.1
             - [x] 理論的には、textPart から TTS ストリームハンドラーへの接続は別のキュー、つまりオーディオストリームキューに接続する必要がある
             - [x] オーディオストリームはマージできるか？ Raw PCM (.wav) を直接扱う必要があるかもしれない
             - [x] オーディオストリームキューハンドラーは、再生するためにオーディオストリームキューからオーディオを継続的に見つける必要がある
-- [x] 基本的な Neuro Sama / AI Vtuber ロールプレイング (2024年6月10日)
+- [x] 基本的な Neuro Sama / AI Vtuber ロールプレイング (2024 年 6 月 10 日)
   - [x] 基本的なプロンプト
 
-2024年6月10日に完了済み、所要時間は4日未満。
+2024 年 6 月 10 日に完了済み、所要時間は 4 日未満。
 
 現在は以下が可能です：
 - ✅ フルスタック (元々は素の Vue 3 でした)
@@ -67,23 +67,23 @@ title: 前日譚 v0.0.1
 
 ## マルチモーダル
 
-### 口 (2024年6月8日)
+### 口 (2024 年 6 月 8 日)
 
-- [x] TTS 統合 (2024年6月8日)
+- [x] TTS 統合 (2024 年 6 月 8 日)
   - [x] 11Labs 統合
 - [ ] 調査
   - [ ] <span class="text-sm px-1 py-0.5 border border-solid border-purple-500/30 text-purple-800 dark:text-purple-400 bg-purple-500/20 rounded-lg">実験</span> [Deepgram Voice AI: Text to Speech + Speech to Text APIs | Deepgram](https://deepgram.com/)
   - [ ] <span class="text-sm px-1 py-0.5 border border-solid border-purple-500/30 text-purple-800 dark:text-purple-400 bg-purple-500/20 rounded-lg">実験</span> GPT-SoVITS を試す
-  - [x] <span class="text-sm px-1 py-0.5 border border-solid border-purple-500/30 text-purple-800 dark:text-purple-400 bg-purple-500/20 rounded-lg">実験</span> fish-speech を試す (2024年7月6日 ~ 2024年7月7日)
-    - <span class="i-icon-park-outline:up-one translate-y-0.5 text-green-800 dark:text-green-400 text-lg"></span> 確かに数ショットの直接コピーが可能で、Gura の声をコピーしてみましたが、最初の4秒間は非常に高い品質を維持できました
+  - [x] <span class="text-sm px-1 py-0.5 border border-solid border-purple-500/30 text-purple-800 dark:text-purple-400 bg-purple-500/20 rounded-lg">実験</span> fish-speech を試す (2024 年 7 月 6 日 ~ 2024 年 7 月 7 日)
+    - <span class="i-icon-park-outline:up-one translate-y-0.5 text-green-800 dark:text-green-400 text-lg"></span> 確かに数ショットの直接コピーが可能で、Gura の声をコピーしてみましたが、最初の 4 秒間は非常に高い品質を維持できました
     - <span class="i-icon-park-outline:up-one translate-y-0.5 text-green-800 dark:text-green-400 text-lg"></span> fish audio のオーディオ処理ツールは非常に包括的で、オーディオプロセッサーはほとんどのニーズ (ラベリングや自動ラベリングを含む) をカバーできます
     - <span class="i-icon-park-outline:down-one translate-y-0.5 text-red-800 dark:text-red-400 text-lg"></span> 効果は非常に不安定で、頻繁に単語や音を飲み込んだり、突然ランダムなノイズを出したりします
-    - <span class="i-icon-park-outline:down-one translate-y-0.5 text-red-800 dark:text-red-400 text-lg"></span> RTX 4090 デバイスで実行しても、ストリーミングオーディオモードでは、推論結果を出力するのに最大2秒かかります
-  - [x] <span class="text-sm px-1 py-0.5 border border-solid border-purple-500/30 text-purple-800 dark:text-purple-400 bg-purple-500/20 rounded-lg">実験</span> ChatTTS を試す (2024年7月6日 ~ 2024年7月7日)
+    - <span class="i-icon-park-outline:down-one translate-y-0.5 text-red-800 dark:text-red-400 text-lg"></span> RTX 4090 デバイスで実行しても、ストリーミングオーディオモードでは、推論結果を出力するのに最大 2 秒かかります
+  - [x] <span class="text-sm px-1 py-0.5 border border-solid border-purple-500/30 text-purple-800 dark:text-purple-400 bg-purple-500/20 rounded-lg">実験</span> ChatTTS を試す (2024 年 7 月 6 日 ~ 2024 年 7 月 7 日)
     - <span class="i-icon-park-outline:up-one translate-y-0.5 text-green-800 dark:text-green-400 text-lg"></span> 確かに数ショットの直接コピーが可能で、Gura の声をコピーしてみましたが、効果は fish-speech ほど良くありません
     - <span class="i-icon-park-outline:up-one translate-y-0.5 text-green-800 dark:text-green-400 text-lg"></span> 感情制御は fish-speech よりもはるかに優れていますが、英語環境では `[uv_break]` のようなトークンも発音されてしまい、WeChat グループの人々もこれについて議論し質問しています
     - <span class="i-icon-park-outline:down-one translate-y-0.5 text-red-800 dark:text-red-400 text-lg"></span> RTX 4090 デバイスで実行しても、ストリーミングオーディオモードでは数分かかります... 🤯 本当にばかげています。プレーン/正規化されたテキストをアクショントークン付きのテキストに変換するために最初にローカルで LLM を実行しているようで、LLM を開始するときにキャッシュやモデルサイズの考慮がないようです
-   - [x] <span class="text-sm px-1 py-0.5 border border-solid border-purple-500/30 text-purple-800 dark:text-purple-400 bg-purple-500/20 rounded-lg">実験</span> [TTS Arena - a Hugging Face Space by TTS-AGI](https://huggingface.co/spaces/TTS-AGI/TTS-Arena) で言及されている他のモデルを試す (2024年7月8日)
+   - [x] <span class="text-sm px-1 py-0.5 border border-solid border-purple-500/30 text-purple-800 dark:text-purple-400 bg-purple-500/20 rounded-lg">実験</span> [TTS Arena - a Hugging Face Space by TTS-AGI](https://huggingface.co/spaces/TTS-AGI/TTS-Arena) で言及されている他のモデルを試す (2024 年 7 月 8 日)
     - [x] <span class="text-sm px-1 py-0.5 border border-solid border-purple-500/30 text-purple-800 dark:text-purple-400 bg-purple-500/20 rounded-lg">実験</span> XTTSv2 を試す
       - <span class="i-icon-park-outline:down-one translate-y-0.5 text-red-800 dark:text-red-400 text-lg"></span> huggingface を直接使用しましたが、効果は低く、fish speech や chatts よりも安定していますが、トーンが平坦すぎて、アニメのトーンには LoRA が必要かもしれません
     - [x] <span class="text-sm px-1 py-0.5 border border-solid border-purple-500/30 text-purple-800 dark:text-purple-400 bg-purple-500/20 rounded-lg">実験</span> StyleTTS 2 を試す
@@ -92,10 +92,10 @@ title: 前日譚 v0.0.1
    - [ ] <span class="text-sm px-1 py-0.5 border border-solid border-purple-500/30 text-purple-800 dark:text-purple-400 bg-purple-500/20 rounded-lg">実験</span> [Koemotion](https://koemotion.rinna.co.jp/)
    - [ ] <span class="text-sm px-1 py-0.5 border border-solid border-purple-500/30 text-purple-800 dark:text-purple-400 bg-purple-500/20 rounded-lg">実験</span> [Seed-TTS](https://bytedancespeech.github.io/seedtts_tech_report/)
 
-### 表情 (2024年7月9日)
+### 表情 (2024 年 7 月 9 日)
 
-- [x] <span class="text-sm px-1 py-0.5 border border-solid border-purple-500/30 text-purple-800 dark:text-purple-400 bg-purple-500/20 rounded-lg">実験</span> 埋め込み命令を通じてリアルタイムで表情を素早く処理する方法について GPT と議論しました https://poe.com/s/vu7foBWJHtnPmWzJNeAy (2024年7月7日)
-- [x] フロントエンド Live2D 表情制御 (2024年7月9日)
+- [x] <span class="text-sm px-1 py-0.5 border border-solid border-purple-500/30 text-purple-800 dark:text-purple-400 bg-purple-500/20 rounded-lg">実験</span> 埋め込み命令を通じてリアルタイムで表情を素早く処理する方法について GPT と議論しました https://poe.com/s/vu7foBWJHtnPmWzJNeAy (2024 年 7 月 7 日)
+- [x] フロントエンド Live2D 表情制御 (2024 年 7 月 9 日)
   - [x] `<|EMOTE_HAPPY|>` のエンコードを通じて実装
   - [x] `<|DELAY:1|>` のような遅延構文の追加サポート
   - [x] <span class="text-sm px-1 py-0.5 border border-solid border-green-500/30 text-green-800 dark:text-green-400 bg-green-500/20 rounded-lg">機能</span> 感情トークン `<|EMOTE_.*|>` パーサーとトークナイザーをカプセル化
@@ -120,7 +120,7 @@ title: 前日譚 v0.0.1
   - [ ] [Hannibal046/Awesome-LLM: Awesome-LLM: a curated list of Large Language Model](https://github.com/Hannibal046/Awesome-LLM)
 - [ ] 調査時の ADHD 行動
   - [ ] 友人が NVIDIA の新しい論文 [ConsiStory: Training-Free Consistent Text-to-Image Generation](https://research.nvidia.com/labs/par/consistory/) を勧めてくれました。IPadapter よりも安定していると感じます。
-- [ ] 興味深いのは [IDEA-Research/MotionLLM: [Arxiv-2024] MotionLLM: Understanding Human Behaviors from Human Motions and Videos](https://github.com/IDEA-Research/MotionLLM) です。この論文と研究方向は、ビデオアニメーションフレーム間で形成される人間のアクションを説明するために自然言語を使用することに関するものです。2024年5月31日公開。
+- [ ] 興味深いのは [IDEA-Research/MotionLLM: [Arxiv-2024] MotionLLM: Understanding Human Behaviors from Human Motions and Videos](https://github.com/IDEA-Research/MotionLLM) です。この論文と研究方向は、ビデオアニメーションフレーム間で形成される人間のアクションを説明するために自然言語を使用することに関するものです。2024 年 5 月 31 日公開。
 - [ ] [Ksuriuri/EasyAIVtuber: Simply animate your 2D waifu.](https://github.com/Ksuriuri/EasyAIVtuber)
 - [ ] これはかなり大きなトピックで、いくつかのキーワードを調査し、この現在の方向性における主流の研究命題を見つけました：
   - [ ] デジタルヒューマン合成 -> 仮想 WebCam モーションキャプチャ
@@ -162,7 +162,7 @@ title: 前日譚 v0.0.1
   - [ ] 身体化制御 (Embodied Control)
     - [ ] ここに多く記録されています
       - [ ] [zchoi/Awesome-Embodied-Agent-with-LLMs](https://github.com/zchoi/Awesome-Embodied-Agent-with-LLMs)：これは「大規模言語モデルを使用した身体化 AI またはロボット」の研究の厳選されたリストです。最新の更新情報については、このリポジトリをご覧ください！ 🔥
-    - [ ] [MP5: A Multi-modal Open-ended Embodied System in Minecraft via Active Perception](https://arxiv.org/pdf/2312.07472) これは興味深いです。比較的完全な Minecraft RL フレームワークを使用し、自然な指示を使用して LLM に「**昼間**に**草原**の**水際**で**石の剣**で**豚**を**殺す**」と伝え、RL エージェントはこれらの特徴を認識して対応する目標を達成できます。[AI に Minecraft をプレイさせる方法は？ Voyager 論文メモ](https://nolebase.ayaka.io/to/27024f5434) とは異なり、MP5 は PlanMC に似ており、Voyager の元の純粋なテキストと純粋な状態情報ではなく、マルチモーダル機能を統合しています。
+    - [ ] [MP5: A Multi-modal Open-ended Embodied System in Minecraft via Active Perception](https://arxiv.org/pdf/2312.07472) これは興味深いです。比較的完全な Minecraft RL フレームワークを使用し、自然な指示を使用して LLM に「**昼間**に**草原**の**水際**で**石の剣**で**豚**を**殺す**」と伝え、RL エージェントはこれらの特徴を認識して対応する目標を達成できます。[AI に Minecraft をプレイさせる方法は？Voyager 論文メモ](https://nolebase.ayaka.io/to/27024f5434) とは異なり、MP5 は PlanMC に似ており、Voyager の元の純粋なテキストと純粋な状態情報ではなく、マルチモーダル機能を統合しています。
       - [ ] 概要: 非常に挑戦的な Minecraft シミュレーター上に構築された、実行可能なサブゴールを分解し、複雑なコンテキスト認識計画を設計し、身体化されたアクション制御を実行し、目標条件付きのアクティブな知覚スキームと頻繁に通信できる、オープンエンドのマルチモーダル身体化システム MP5 を紹介します。具体的には、MP5 はマルチモーダル大規模言語モデル (MLLM) の最近の進歩に基づいて開発されており、システムは複数の機能モジュールに変調されており、スケジュールと連携を行って、最終的に事前定義されたコンテキストおよびプロセス関連のタスクを解決できます。
     - [ ] [CRADLE: Empowering Foundation Agents Towards General Computer Control](https://arxiv.org/pdf/2403.03186) まだ読んでいません。暇なときに読みます。
     - [ ] [Embodied Multi-Modal Agent trained by an LLM from a Parallel TextWorld](https://arxiv.org/pdf/2311.16714) は主に **並行テキスト世界で優れた LLM エージェントを使用して、視覚世界に住む VLM エージェントをトレーニングする** ことについて語っています。

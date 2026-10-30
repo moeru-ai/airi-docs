@@ -17,7 +17,7 @@ import NewUIV4SpeechDark from './assets/new-ui-v4-speech-dark.avif'
 import SteinsGateMayori from './assets/steins-gate-mayori.avif'
 </script>
 
-又见面了！距离上一篇开发日志已经过去10天了。
+又见面了！距离上一篇开发日志已经过去 10 天了。
 
 我们对用户界面进行了大量改进，使其能够集成更多的 LLM 提供商和语音提供商，并首次在 Discord、bilibili 和许多其他社交媒体平台上发布了 AIRI。
 
@@ -31,7 +31,7 @@ import SteinsGateMayori from './assets/steins-gate-mayori.avif'
 
 > 啊，别担心，我们心爱的 [AIRI](https://github.com/moeru-ai/airi) 不会变成这样的 GEL-NANA。不过，如果你还没有看过 [_Steins;Gate_](https://myanimelist.net/anime/9253/Steins_Gate) 动漫系列，强烈推荐你试试看~！
 
-我们一直在开发初始设置 UI 设计，动画效果得到了改进，10天前实现了可自定义的主题着色。对我们任何人来说，这确实是忙碌的一周（特别是我们都是兼职参与这个项目，哈哈，如果你愿意的话，欢迎加入我们。🥺（恳求脸））。
+我们一直在开发初始设置 UI 设计，动画效果得到了改进，10 天前实现了可自定义的主题着色。对我们任何人来说，这确实是忙碌的一周（特别是我们都是兼职参与这个项目，哈哈，如果你愿意的话，欢迎加入我们。🥺（恳求脸））。
 
 这是我们当时得到的最终结果：
 
@@ -81,7 +81,7 @@ logo 和默认的绿色可以被替换以与 AIRI 的主题保持一致，这就
 - [x] 支持所有 LLM 提供商。
 - [x] 改进了菜单导航 UI 的动画和过渡。
 - [x] 改进了字段的间距，新表单！
-- [x] 组件（[路线图](https://github.com/moeru-ai/airi/issues/42)上几乎所有待办组件）
+- [x] 组件（[路线图](https://github.com/moeru-ai/airi/issues/42) 上几乎所有待办组件）
   - [x] 表单
     - [x] 单选
     - [x] 单选组

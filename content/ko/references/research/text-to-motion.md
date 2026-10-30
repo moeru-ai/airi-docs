@@ -13,7 +13,7 @@ https://arxiv.org/html/2410.23234?_immersive_translate_auto_translate=1
 Harmon: 언어 설명으로부터 휴머노이드 로봇의 전신 동작을 생성하기 --- Harmon: Whole-Body Motion Generation of Humanoid Robots from Language Descriptions
 https://arxiv.org/html/2410.12773?_immersive_translate_auto_translate=1
 
-사람 수준의 지시로부터 사람-객체 상호작용 생성하기 --- Human-Object Interaction from Human-Level Instructions
+사람 수준의 지시로부터 사람 - 객체 상호작용 생성하기 --- Human-Object Interaction from Human-Level Instructions
 https://arxiv.org/html/2406.17840?_immersive_translate_auto_translate=1
 
 ## 상업 솔루션

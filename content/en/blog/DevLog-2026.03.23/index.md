@@ -256,7 +256,7 @@ Since iOS is the most restrictive environment regarding WebView memory, the next
 
 ### 3. Build Size Optimization
 
-Explore Unity’s asset management system, keeping the initial install size minimal.
+Explore Unity's asset management system, keeping the initial install size minimal.
 
 ### 4. Community / Contributor Outreach
 

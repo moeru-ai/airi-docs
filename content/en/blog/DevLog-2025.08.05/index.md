@@ -224,7 +224,7 @@ adding support of adding onboarding screen for Web version, now you can
 have a much better experience when you first time using AIRI.
 
 They wrote a blog after the Pull Request being merged to share the
-experience contributing Project AIRI: [AIRIプロジェクトに参加した話 - YAMA-blog](https://yama-pro.blog/posts/airi/)
+experience contributing Project AIRI: [AIRI プロジェクトに参加した話 - YAMA-blog](https://yama-pro.blog/posts/airi/)
 
 <img class="light" src="./assets/airi-demo-onboarding-light.avif" alt="Onboarding light mode" />
 <img class="dark" src="./assets/airi-demo-onboarding-dark.avif" alt="Onboarding dark mode" />

@@ -3,11 +3,11 @@ title: X / Twitter (사용 불가)
 description: AIRI X / Twitter 통합의 현재 구현 상태
 ---
 
-X / Twitter 통합은 AIRI 0.11.3에서 동작하지 않습니다. **설정 → 모듈 → X / Twitter**에 자격 증명 필드가 표시되고 **configured** 상태가 나타날 수 있지만, 현재 앱은 그 설정을 별도의 X 서비스에 전달할 수 없습니다.
+X / Twitter 통합은 AIRI 0.11.3 에서 동작하지 않습니다. **설정 → 모듈 → X / Twitter**에 자격 증명 필드가 표시되고 **configured** 상태가 나타날 수 있지만, 현재 앱은 그 설정을 별도의 X 서비스에 전달할 수 없습니다.
 
 ::: warning X 자격 증명을 입력하지 마세요
 
-현재 버전에서는 API Key, API Secret, Access Token, Access Token Secret을 입력하지 마세요. **configured** 상태는 네 필드에 모두 값이 들어 있다는 뜻일 뿐, 서비스 연결이 동작한다는 것을 확인해 주지 않습니다.
+현재 버전에서는 API Key, API Secret, Access Token, Access Token Secret 을 입력하지 마세요. **configured** 상태는 네 필드에 모두 값이 들어 있다는 뜻일 뿐, 서비스 연결이 동작한다는 것을 확인해 주지 않습니다.
 :::
 
 ## 현재 제한 사항
