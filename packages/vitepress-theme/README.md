@@ -87,6 +87,8 @@ export default createTheme({
 
 - `home`: the `home` component of `createTheme`.
 - `showcase`: a grid of cards, without the sidebar.
+- `page`: the Markdown content at full width, without the sidebar, outline, or footer.
+  Use it for pages that render their own layout through components.
 - Everything else: docs page with sidebar, outline, community links and footer.
 
 ### Components
