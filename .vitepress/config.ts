@@ -75,6 +75,8 @@ export default defineConfig<ThemeConfig>({
   lastUpdated: true,
   sitemap: {
     hostname: ogUrl,
+    // The brand pages of the other languages only send the reader to the English page.
+    transformItems: items => items.filter(item => !/^(?:zh-Hans|ja|ko)\/brand$/.test(item.url)),
   },
   locales: {
     'root': {
