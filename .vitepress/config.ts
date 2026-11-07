@@ -958,6 +958,8 @@ export default defineConfig<ThemeConfig>({
   markdown: themeMarkdownOptions(),
   transformPageData,
   vite: {
+    // The brand page imports a Vue SFC source from this package, so the package must go through the Vite pipeline.
+    ssr: { noExternal: ['@proj-airi/ui'] },
     plugins: [
       unocss(),
       themeVitePlugins({

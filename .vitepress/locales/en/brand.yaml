@@ -1,0 +1,116 @@
+hero:
+  title: Brand Kit
+  lead: Re-creating Neuro-sama, a soul container of AI waifu / virtual characters to bring them into our world.
+  caption: AIRI on desktop
+nav:
+  label: Sections
+download:
+  kit: Download brand kit
+  all: All assets
+  section: Download this section
+  character: Character
+  stickers: Sticker pack
+  files: '{count} files / ZIP'
+  packing: 'Packing {done} of {total}'
+  failed: The download failed. Try again.
+actions:
+  copied: 'Copied "{value}"'
+  copy-failed: The browser blocked the clipboard.
+  download: 'Download {name}'
+files:
+  dark: Dark
+  light: Light
+sections:
+  about:
+    title: About
+  screenshots:
+    title: Screenshots
+  visuals:
+    title: Visuals
+  character:
+    title: Character
+  basics:
+    title: Brand basics
+  usage:
+    title: Using the brand
+groups:
+  logo: Logo & Icons
+  banners: Banners
+  covers: Covers
+logo:
+  artboard: Logo
+  feature: The AIRI logo on a grid
+about:
+  lengths:
+    short: Short
+    medium: Medium
+    long: Long
+  # Each description is its own part and all parts before it.
+  parts:
+    short: Project AIRI is an open-source attempt to re-create Neuro-sama, the AI VTuber, and a cyber companion for everyone.
+    medium: AIRI is a soul container of AI waifu and virtual characters. It can chat, listen, and speak, and it can play games such as Minecraft and Factorio. AIRI runs in modern browsers, on desktop computers, and on mobile devices.
+    long: AIRI uses Web technologies such as WebGPU, WebAudio, WebAssembly, and WebSocket from the first day. The desktop version can use NVIDIA CUDA and Apple Metal for local inference. Characters can use VRM and Live2D models, and AIRI can chat in Telegram and Discord. Voice synthesis supports several providers, such as ElevenLabs, Microsoft Azure Speech, OpenAI-compatible services, and local Kokoro TTS. The project is open source under the MIT License. Its goal is to let everyone own a digital life, easily, anywhere, and at any time.
+facts:
+  name:
+    label: Name
+  category:
+    label: What it is
+    value: Open-source AI companion and AI VTuber
+  started:
+    label: Started
+    value: June 2024
+  platforms:
+    label: Platforms
+    value: Web, Windows, macOS, Linux, iOS, Android
+  license:
+    label: License
+  developer:
+    label: Developer
+    value: Moeru AI and contributors
+  website:
+    label: Website
+  links:
+    label: Links
+  contact:
+    label: Contact
+assets:
+  screenshot-desktop: Desktop
+  screenshot-mobile: Mobile
+  screenshot-tool-calls: Chat / Tool calls
+  screenshot-vrm: VRM model
+  logo: Logo / Light
+  logo-dark: Logo / Dark
+  app-icon-light: App icon / Light
+  app-icon-dark: App icon / Dark
+  iru: Iru (Official built-in character)
+  banner-light: Light
+  banner-dark: Dark
+  cover-summer: Summer
+  cover-halloween: Halloween
+  cover-christmas: Christmas
+basics:
+  name: Name
+  full: Full name
+  short: Short name
+  japanese: Japanese
+  credit: Credit
+typography:
+  display: Display
+  text: Text
+  get: Get the font
+usage:
+  terms: The AIRI name, logo, and characters identify Project AIRI. Use them to refer to the project, for example in articles, videos, and community projects. Do not use them in a way that suggests that Project AIRI made, sponsors, or approves your work. For other uses, contact us first.
+  dos: Dos
+  donts: Don'ts
+  dont: Don't
+  examples:
+    on-light: Light background
+    on-dark: Dark background
+    stretch: Stretch
+    rotate: Rotate
+    recolor: Recolor
+    effects: Add effects
+    busy: Busy background
+    opacity: Lower opacity
+footer:
+  copyright: Copyright © 2024-PRESENT Project AIRI × Moeru AI
