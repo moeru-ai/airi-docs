@@ -6,6 +6,7 @@ export default defineConfig<object>({
     filesystem: [
       '.vitepress/**/*.{js,ts,vue}',
       'content/**/*.md',
+      'node_modules/@proj-airi/ui/src/components/form/select-tab/*.vue',
       ...themeContentGlobs,
     ],
   },

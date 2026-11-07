@@ -2,7 +2,7 @@
 import { useLocalStorage, useScroll } from '@vueuse/core'
 import { MotionConfig } from 'motion-v'
 import { TooltipProvider } from 'reka-ui'
-import { useData, useRoute, withBase } from 'vitepress'
+import { Content, useData, useRoute, withBase } from 'vitepress'
 import { computed, onMounted, toRefs, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 
@@ -74,6 +74,11 @@ watch(lang, () => locale.value = lang.value, { immediate: true })
         <div v-else-if="layout === 'showcase'" class="h-full max-w-[1440px] w-full grow">
           <Showcase />
         </div>
+
+        <!-- Full-width Markdown content, the page renders its own layout -->
+        <main v-else-if="layout === 'page'" class="w-full grow">
+          <Content />
+        </main>
 
         <div v-else class="h-full max-w-[1440px] w-full grow">
           <Docs>

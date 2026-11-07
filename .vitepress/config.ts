@@ -75,6 +75,8 @@ export default defineConfig<ThemeConfig>({
   lastUpdated: true,
   sitemap: {
     hostname: ogUrl,
+    // The brand pages of the other languages only send the reader to the English page.
+    transformItems: items => items.filter(item => !/^(?:zh-Hans|ja|ko)\/brand$/.test(item.url)),
   },
   locales: {
     'root': {
@@ -94,6 +96,7 @@ export default defineConfig<ThemeConfig>({
           {
             text: 'About',
             items: [
+              { text: 'Brand Kit', link: withBase('/en/brand') },
               { text: 'Privacy Policy', link: withBase('/en/about/privacy') },
               { text: 'Terms of Use', link: withBase('/en/about/terms') },
             ],
@@ -333,6 +336,8 @@ export default defineConfig<ThemeConfig>({
           {
             text: '关于',
             items: [
+              // The brand page is available only in English.
+              { text: '品牌资源', link: withBase('/en/brand') },
               { text: '隐私政策', link: withBase('/zh-Hans/about/privacy') },
               { text: '使用条款', link: withBase('/zh-Hans/about/terms') },
             ],
@@ -575,6 +580,8 @@ export default defineConfig<ThemeConfig>({
           {
             text: '概要',
             items: [
+              // The brand page is available only in English.
+              { text: 'ブランドキット', link: withBase('/en/brand') },
               { text: 'プライバシーポリシー', link: withBase('/ja/about/privacy') },
               { text: '利用規約', link: withBase('/ja/about/terms') },
             ],
@@ -712,6 +719,8 @@ export default defineConfig<ThemeConfig>({
           {
             text: '소개',
             items: [
+              // The brand page is available only in English.
+              { text: '브랜드 키트', link: withBase('/en/brand') },
               { text: '개인정보 처리방침', link: withBase('/ko/about/privacy') },
               { text: '이용약관', link: withBase('/ko/about/terms') },
             ],
@@ -958,6 +967,8 @@ export default defineConfig<ThemeConfig>({
   markdown: themeMarkdownOptions(),
   transformPageData,
   vite: {
+    // The brand page imports a Vue SFC source from this package, so the package must go through the Vite pipeline.
+    ssr: { noExternal: ['@proj-airi/ui'] },
     plugins: [
       unocss(),
       themeVitePlugins({
