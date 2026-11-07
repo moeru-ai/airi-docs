@@ -10,6 +10,13 @@ packages:
 overrides:
   '@types/hast': 'catalog:'
 
+allowBuilds:
+  '@napi-rs/image': true
+  esbuild: true
+  vue-demi: false
+
+patchedDependencies:
+  '@proj-airi/ui@0.14.1': patches/@proj-airi__ui@0.14.1.patch
 catalog:
   '@fontsource-variable/comfortaa': ^5.3.0
   '@fontsource-variable/dm-sans': ^5.3.0
@@ -30,6 +37,7 @@ catalog:
   '@nolebase/vitepress-plugin-page-properties': ^2.18.2
   '@openpanel/web': 1.4.1
   '@proj-airi/chromatic': ^1.1.4
+  '@proj-airi/ui': 0.14.1
   '@proj-airi/unocss-preset-chromatic': ^1.1.4
   '@radix-ui/colors': ^3.0.0
   '@types/hast': ^3.0.5
@@ -65,10 +73,6 @@ catalog:
   vue: ^3.5.41
   vue-i18n: ^11.4.9
   vue-tsc: ^3.3.11
-
-allowBuilds:
-  '@napi-rs/image': true
-  esbuild: true
 
 packageExtensions:
   '@intlify/unplugin-vue-i18n':

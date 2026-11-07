@@ -27,6 +27,7 @@
     "@moeru/std": "catalog:",
     "@openpanel/web": "catalog:",
     "@proj-airi/chromatic": "catalog:",
+    "@proj-airi/ui": "catalog:",
     "@proj-airi/vitepress-theme": "workspace:^",
     "@vueuse/core": "catalog:",
     "animejs": "catalog:",
