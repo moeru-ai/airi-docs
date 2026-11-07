@@ -10,7 +10,7 @@ type ButtonTheme
 // | 'lightened'
 
 // Define size options for better flexibility
-type ButtonSize = 'sm' | 'md' | 'lg'
+type ButtonSize = 'xs' | 'sm' | 'md' | 'lg'
 
 interface ButtonProps {
   toggled?: boolean // Optional toggled state for toggle buttons
@@ -70,14 +70,15 @@ const variantClasses: Record<ButtonVariant, {
 
 // Extract size styles for better organization
 const sizeClasses: Record<ButtonSize, string> = {
-  sm: 'px-3 py-1.5 text-xs',
-  md: 'px-4 py-2 text-sm',
-  lg: 'px-6 py-3 text-base',
+  xs: 'rounded-lg px-2 py-0.5 text-xs',
+  sm: 'rounded-xl px-3 py-1.5 text-xs',
+  md: 'rounded-xl px-4 py-2 text-sm',
+  lg: 'rounded-xl px-6 py-3 text-base',
 }
 
 // Base classes that are always applied
 const baseClasses = computed(() => [
-  'rounded-xl font-medium outline-none',
+  'font-medium outline-none',
   'transition-all duration-200 ease-in-out',
   'disabled:cursor-not-allowed disabled:opacity-50',
   'backdrop-blur-md',
@@ -94,7 +95,7 @@ const baseClasses = computed(() => [
     :disabled="isDisabled"
     :class="baseClasses"
   >
-    <div class="flex flex-row items-center justify-center gap-2">
+    <div class="flex flex-row items-center justify-center" :class="props.size === 'xs' ? 'gap-1' : 'gap-2'">
       <div v-if="props.icon" class="w-4">
         <div class="h-4 w-4" :class="icon" />
       </div>
