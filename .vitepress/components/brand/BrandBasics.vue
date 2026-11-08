@@ -10,10 +10,14 @@ import { CREDIT_HOLDERS, CREDIT_LINE } from './kit'
 const { t } = useI18n()
 const toast = useBrandToast()
 
-const fonts = [
-  { role: 'display', name: 'Comfortaa', family: 'var(--bk-font-display)', url: 'https://fonts.google.com/specimen/Comfortaa' },
-  { role: 'text', name: 'Nunito', family: 'var(--bk-font-text)', url: 'https://fonts.google.com/specimen/Nunito' },
-] as const
+/**
+ * The brand font for the name and titles. AIRI has no single text font: its interface uses DM Sans, and its chat uses Nunito.
+ * So the card does not list a text font, although this page sets its text in Nunito.
+ */
+const displayFont = { name: 'Comfortaa', url: 'https://fonts.google.com/specimen/Comfortaa' }
+
+/** The character set that the wide type card shows beside the sample. */
+const glyphLines = ['ABCDEFGHIJKLM', 'NOPQRSTUVWXYZ', 'abcdefghijklm', 'nopqrstuvwxyz', '0123456789']
 
 /** The written forms of the name. The sources are the README of the AIRI repository and the `productName` of its desktop build. */
 const names: { role: string, value: string }[] = [
@@ -74,24 +78,26 @@ async function copy(value: string) {
       </button>
     </div>
 
-    <div class="bk-basics__cell is-wide bk-reveal">
+    <div class="bk-basics__cell bk-reveal">
       <BrandColorSwatch :hex="MARK_PINK" />
     </div>
 
-    <div v-for="font of fonts" :key="font.name" class="bk-basics__cell bk-reveal">
+    <div class="bk-basics__cell is-font bk-reveal">
       <a
-        :href="font.url"
+        :href="displayFont.url"
         target="_blank"
         rel="noopener noreferrer"
         class="bk-font"
-        :style="{ '--font': font.family }"
-        :aria-label="`${font.name}, ${t('docs.brand.typography.get')}`"
+        :aria-label="`${displayFont.name}, ${t('docs.brand.typography.get')}`"
         :title="t('docs.brand.typography.get')"
       >
         <span class="bk-font__glyph" aria-hidden="true">Aa</span>
         <span class="bk-font__meta">
-          <span class="bk-font__role bk-mono">{{ t(`docs.brand.typography.${font.role}`) }}</span>
-          <span class="bk-font__name">{{ font.name }}</span>
+          <span class="bk-font__role bk-mono">{{ t('docs.brand.typography.display') }}</span>
+          <span class="bk-font__name">{{ displayFont.name }}</span>
+        </span>
+        <span class="bk-font__set" aria-hidden="true">
+          <span v-for="line of glyphLines" :key="line">{{ line }}</span>
         </span>
         <span class="bk-font__arrow i-lucide:arrow-up-right" aria-hidden="true" />
       </a>
@@ -122,6 +128,7 @@ async function copy(value: string) {
   }
 }
 
+/* The second row mirrors the first: the color in one column, and the type card in two. */
 @media (min-width: 1024px) {
   .bk-basics {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -131,7 +138,8 @@ async function copy(value: string) {
     grid-column: auto;
   }
 
-  .bk-basics__cell.is-name {
+  .bk-basics__cell.is-name,
+  .bk-basics__cell.is-font {
     grid-column: span 2;
   }
 }
@@ -328,7 +336,7 @@ async function copy(value: string) {
 }
 
 .bk-font__glyph {
-  font-family: var(--font);
+  font-family: var(--bk-font-display);
   font-size: clamp(4.5rem, 8vw, 6.5rem);
   font-weight: 400;
   line-height: 0.9;
@@ -348,10 +356,51 @@ async function copy(value: string) {
 }
 
 .bk-font__name {
-  font-family: var(--font);
+  font-family: var(--bk-font-display);
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: -0.02em;
+}
+
+.bk-font__set {
+  display: none;
+  font-family: var(--bk-font-display);
+  font-size: 1.375rem;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: hsl(var(--muted-foreground));
+}
+
+.bk-font__set > span {
+  display: block;
+}
+
+/*
+ * The type card is two columns wide: the sample and the name on the left, and the character set on the right, at the
+ * height of the name.
+ */
+@media (min-width: 1024px) {
+  .bk-font {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: minmax(0, 1fr) auto;
+    column-gap: 2rem;
+  }
+
+  .bk-font__glyph {
+    grid-area: 1 / 1;
+  }
+
+  .bk-font__meta {
+    grid-area: 2 / 1;
+  }
+
+  .bk-font__set {
+    display: block;
+    grid-area: 1 / 2 / 3 / 3;
+    align-self: end;
+    margin-right: 1.5rem;
+  }
 }
 
 .bk-font__arrow {
@@ -386,10 +435,8 @@ async function copy(value: string) {
     min-height: 0;
   }
 
-  /* The samples of the two fonts have different widths. A fixed width gives the names of both cards the same left edge. */
   .bk-font__glyph {
     flex: none;
-    width: 4.75rem;
     font-size: 3.5rem;
   }
 
