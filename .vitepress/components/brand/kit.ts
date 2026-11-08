@@ -58,7 +58,7 @@ export function projectFacts(t: Translate): ProjectFact[] {
   })
 
   return [
-    fact('name', 'Project AIRI / AIRI / アイリ'),
+    fact('name', 'Project AIRI / AIRI'),
     fact('category'),
     fact('started'),
     fact('platforms'),

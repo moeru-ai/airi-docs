@@ -92,7 +92,6 @@ basics:
   name: Name
   full: Full name
   short: Short name
-  japanese: Japanese
   credit: Credit
 typography:
   display: Display

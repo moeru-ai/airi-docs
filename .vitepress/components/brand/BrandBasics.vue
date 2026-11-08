@@ -15,17 +15,16 @@ const fonts = [
   { role: 'text', name: 'DM Sans', family: 'var(--bk-font-text)', url: 'https://fonts.google.com/specimen/DM+Sans' },
 ] as const
 
-/**
- * The written forms of the name. The sources are the README of the AIRI repository, the `productName` of its desktop
- * build, and the post "DreamLog 0x1", which says "with the name of AIRI (アイリ, formerly Airi)".
- */
-const names: { role: string, value: string, lang?: string }[] = [
+/** The written forms of the name. The sources are the README of the AIRI repository and the `productName` of its desktop build. */
+const names: { role: string, value: string }[] = [
   { role: 'full', value: 'Project AIRI' },
   { role: 'short', value: 'AIRI' },
-  { role: 'japanese', value: 'アイリ', lang: 'ja' },
 ]
 
-/** "Airi" is the former spelling. The AIRI repository uses the lowercase form only in addresses, commands, and package names. */
+/**
+ * "Airi" is the former spelling, see the post "DreamLog 0x1". The AIRI repository uses the lowercase form only in addresses,
+ * commands, and package names.
+ */
 const wrongNames = ['Airi', 'airi']
 
 async function copy(value: string) {
@@ -47,7 +46,7 @@ async function copy(value: string) {
             <span class="bk-names__role">{{ t(`docs.brand.basics.${name.role}`) }}</span>
             <button type="button" class="bk-names__value" @click="copy(name.value)">
               <span class="bk-names__badge is-do" aria-hidden="true"><span class="i-lucide:check" /></span>
-              <span class="bk-display" :lang="name.lang">{{ name.value }}</span>
+              <span class="bk-display">{{ name.value }}</span>
               <span class="bk-names__copy i-lucide:copy" aria-hidden="true" />
             </button>
           </li>
