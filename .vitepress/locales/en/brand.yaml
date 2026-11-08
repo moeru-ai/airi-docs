@@ -92,11 +92,9 @@ basics:
   name: Name
   full: Full name
   short: Short name
-  japanese: Japanese
   credit: Credit
 typography:
   display: Display
-  text: Text
   get: Get the font
 usage:
   terms: The AIRI name, logo, and characters identify Project AIRI. Use them to refer to the project, for example in articles, videos, and community projects. Do not use them in a way that suggests that Project AIRI made, sponsors, or approves your work. For other uses, contact us first.
