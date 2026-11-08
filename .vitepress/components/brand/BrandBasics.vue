@@ -12,7 +12,7 @@ const toast = useBrandToast()
 
 const fonts = [
   { role: 'display', name: 'Comfortaa', family: 'var(--bk-font-display)', url: 'https://fonts.google.com/specimen/Comfortaa' },
-  { role: 'text', name: 'DM Sans', family: 'var(--bk-font-text)', url: 'https://fonts.google.com/specimen/DM+Sans' },
+  { role: 'text', name: 'Nunito', family: 'var(--bk-font-text)', url: 'https://fonts.google.com/specimen/Nunito' },
 ] as const
 
 /** The written forms of the name. The sources are the README of the AIRI repository and the `productName` of its desktop build. */
