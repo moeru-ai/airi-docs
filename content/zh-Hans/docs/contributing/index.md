@@ -196,6 +196,20 @@ git remote add upstream https://github.com/moeru-ai/airi.git
 
 请检查并确认你的改动，最后点击 **Create pull request** 按钮完成拉取请求创建。
 
+### Human Attestation（人工署名确认）
+
+提交 PR 后，请检查 **Human Attestation** 的状态。这项检查由 [Human Attestation GitHub App](https://github.com/apps/human-attestation) 提供，要求贡献者亲自完成人机验证并确认代码声明。
+
+PR 作者若是拥有仓库 `write`、`maintain` 或 `admin` 权限的人类协作者，会自动通过，无需签署。普通外部贡献者需要完成以下步骤，机器人账号不享受此豁免：
+
+1. 在 PR 的 **Human Attestation** 检查中点击 **Details**，或打开机器人评论中的确认链接。
+2. 使用自己的 GitHub 账号登录确认页面。
+3. 亲自通过 **Cloudflare Turnstile** 人机验证。
+4. 按实际情况选择声明并勾选确认：代码由人类编写，或自己已阅读并理解 PR 中全部由 Agent 编写的代码。提交确认。
+5. 返回 PR，确认 **Human Attestation** 检查已变为通过。
+
+每个 PR 只需确认一次，后续向同一 PR 推送提交会沿用确认记录。检查详情和 App 的 PR 评论会记录签署人、时间、确认时的提交及所选声明，请保留该评论。若签署期间有新提交推送，请刷新确认页面后重试。完整机制见 [AI Guard 说明](https://github.com/frostming/ai-guard#readme)。
+
 ## 好欸！搞定了~
 
 恭喜你成功地为本项目提交了首次贡献！现在可以等待项目的维护人员来审核你的拉取请求啦~
