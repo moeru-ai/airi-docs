@@ -186,6 +186,20 @@ Open the [moeru-ai/airi](https://github.com/moeru-ai/airi) repository page:
 4. Select your fork and working branch.
 5. Review the changes, then click **Create pull request**.
 
+### Human Attestation
+
+After submitting your PR, check its **Human Attestation** status. The [Human Attestation GitHub App](https://github.com/apps/human-attestation) requires contributors to personally complete a human verification challenge and confirm a statement about the code.
+
+Human PR authors with repository `write`, `maintain`, or `admin` permission pass automatically without signing. Other contributors must complete the following steps. Bot accounts are not exempt.
+
+1. Click **Details** on the PR's **Human Attestation** check, or open the confirmation link in the bot comment.
+2. Sign in with your own GitHub account.
+3. Complete the **Cloudflare Turnstile** challenge yourself.
+4. Select the applicable statement: the code is human-written, or you have read and understood all agent-written code in the PR. Check the confirmation box and submit.
+5. Return to the PR and confirm that **Human Attestation** has passed.
+
+Each PR needs one attestation. Later pushes to the same PR reuse that record. The check details and the App's PR comment record the signer, time, commit, and selected statement. Keep that comment. If another commit is pushed while you are signing, refresh the confirmation page and try again. See the [AI Guard documentation](https://github.com/frostming/ai-guard#readme) for details.
+
 ## You made it!
 
 Congratulations on submitting your first contribution. The project maintainers can now review your pull request.
