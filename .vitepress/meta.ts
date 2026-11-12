@@ -23,7 +23,9 @@ export const contactEmail = 'airi@moeru.ai'
 export const sponsor = 'https://github.com/sponsors/nekomeowww'
 
 /* Analytics */
+// The docs site has its own OpenPanel project, apart from the AIRI apps.
+// This public client accepts only the docs origin. Never add a client secret here.
 export const openpanel = {
   apiUrl: 'https://analytics.airi.build/api',
-  clientId: 'f930f223-4a46-4064-b919-1a5465dbc029',
+  clientId: '85a92cc3-0c5c-412a-b5b6-1c2447ad9e63',
 } as const
