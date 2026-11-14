@@ -24,7 +24,7 @@ authors:
     kind: person
 ---
 
-本文对应版本：AIRI-0.14.1
+本文对应版本：AIRI-0.15.1
 
 ::: info 阅读前说明
 - 关于 AIRI 的部分技术性功能和部分操作在该说明书中不会具体讲解。
@@ -33,7 +33,7 @@ authors:
 - 说明书的大部分内容仅供参考，可能与事实不符或者存在偏差，具体请以自己实际体验到的为准。
 - 该说明书可能不会及时更新，部分内容也可能不会同步。
 - 软件部分位置使用的是英文而且并没有提供翻译，该说明书会尝试翻译涉及到的部分内容，最终译文请以实际为准。
-- 版本更新可能会改变部分内容，该说明书仅介绍编写时间前最新的一个版本的特性。
+- 版本更新可能会改变部分内容，该说明书仅介绍编写时间前最新的一个稳定版本的特性。
 - 如果您对本说明书有疑问，欢迎在 [Project AIRI 官方 Discord](https://discord.gg/TgQ3Cu2F7A) 频道中 @jhicefair 或 @0x_selenic_dove 留言。
 - 加入微信群：打开仓库的[微信群说明](https://github.com/moeru-ai/airi/blob/main/docs/wechat.md)，扫描其中的二维码添加微信，并备注 `AIRI`；管理员会邀请您入群。您也可在群中 @爱吃吃的哥伦比娅，或通过微信号 `0xColumbina` 联系。
 - 加入 QQ 群：打开仓库 README 提供的 [QQ 群邀请链接](https://qun.qq.com/universal-share/share?ac=1&authKey=9g00d%2BZS7nORzcJugNNddJ7rCghZTIR7fhXabGwch2S%2BG%2BKGIKwlN1N2nIqkh2jg&busi_data=eyJncm91cENvZGUiOiIxMDU4MTU2Njk3IiwidG9rZW4iOiJmcnkra1hWNFIxNytEcG0zcHRUdVJIaldlRDFxN0dzK080QWtvTEdOQjJkNEY2eUFta1g1clNpbkxSMS9FQWFYIiwidWluIjoiMTI2MDkwNzMzNSJ9&data=b1eJrwn3GVOUh7YIxZ7l9vHQo99HPmRxKPpMKlDCmfzx8Y57IXb2EZCMaOC9rVTd2U558qpNjwUYUWlPHxVHvg&svctype=4&tempid=h5_group_info)，使用 QQ 确认加入；若链接失效，请以仓库 README 的最新链接为准。
@@ -64,7 +64,7 @@ authors:
 ::: info 关于 Windows 安装软件
 安装程序提供两种安装方式：为自己或是所有人安装。
 
-选择为自己安装不需要管理员权限，但仅能当前用户访问；选择为所有人安装需要管理员权限，但此电脑上所有用户都可以使用此软件。
+选择为自己安装不需要管理员权限，但仅能当前用户访问；选择为所有人安装需要管理员权限，装好后本机所有用户都可以使用此软件。
 :::
 
 ::: info 关于 iPhone、iPad 安装软件
@@ -75,6 +75,8 @@ authors:
 
 ::: info 关于华为鸿蒙
 目前暂不提供原生鸿蒙软件，若您使用纯血鸿蒙系统，请使用卓易通安装安卓版软件。
+
+推荐移动设备使用网页版，体验更佳。
 :::
 
 <a id="chapter-2-initial-configuration"></a>
@@ -90,7 +92,7 @@ authors:
 3. 如果您想使用自己的 AI 模型，请点击「**配置您自己的 AI 服务来源**」。若想要使用官方提供的 AI 模型，请点击「**登录**」。如果您不确定使用哪个提供商，我们建议从 [AIRI 官方提供商](../../config/providers/consciousness/official.md)、[OpenRouter](../../config/providers/consciousness/openrouter.md)、[OpenAI 兼容提供商](../../config/providers/consciousness/openai.md)或本地的 [Ollama](../../config/providers/consciousness/ollama.md) 选择一个进行配置。
 4. 若使用自己的 AI 模型（可参考侧栏“配置 → 服务商→ 聊天服务商”了解如何配置）：
    1. 选中您准备的服务来源，然后点击「**下一步**」；
-   2. 填入您的 API Key (必要时可更改 base URL)，然后点击「**下一步**」；
+   2. 填入您的 API Key (必要时可更改 Base URL)，然后点击「**下一步**」；
    3. 再点击一次「**下一步**」；
    4. 选择您打算使用的模型，然后点击「**保存并继续**」。
 5. 若使用官方提供的 AI 模型：请参考 [AIRI 官方提供商](../../config/providers/consciousness/official.md)。
@@ -114,6 +116,8 @@ API Key、AccessKey Secret 和其他服务凭据只应保存在您的设备中�
 ### > 主窗口
 
 本部分主要展示的是桌面端。网页版/移动端可参考此部分，其它网页版/移动端独有功能在[此处](#chapter-3-main-web)介绍。
+
+触摸角色的 live2D 模型可以互动，角色被触摸后会做出相应动作，也会回应你的触摸。默认情况下 20 秒内最多回应一次触摸事件。
 
 该窗口是展示虚拟角色形象的窗口，共有 5 个选项：
 
@@ -247,7 +251,7 @@ API Key、AccessKey Secret 和其他服务凭据只应保存在您的设备中�
 上方有一些按键，具体如下：
 
 - 收起聊天——可以关闭聊天窗口
-- 对话管理——可以切换或删除对话
+- 对话管理——可以切换、删除、重命名对话
 - 静音语音/恢复语音——可以切换是否朗读 AIRI 的话
 - 弹幕机
   - 启动后对话将以弹幕形式呈现，顶部按钮移动至右边，且输入框可隐藏
@@ -301,7 +305,7 @@ API Key、AccessKey Secret 和其他服务凭据只应保存在您的设备中�
 
 ### > AIRI 角色卡
 
-在这里，您可以上传、创建或者直接修改默认的角色卡。
+在这里，您可以上传、新建或者直接修改默认的角色卡。
 
 ![AIRI 角色卡设置界面·旧](./assets/manual-airi-card.avif)
 
@@ -312,7 +316,7 @@ API Key、AccessKey Secret 和其他服务凭据只应保存在您的设备中�
 关于创建新角色卡，建议按下面的顺序配置：
 
 1. 填写名字、昵称、身体/显示模型、版本。
-2. 填写身份内容，包括角色描述和创建者笔记。
+2. 填写身份内容，包括角色描述和可选的创建者笔记。
 3. 根据需要填写行为内容，包括角色性格、场景（或者理解为周围环境、背景、情境）和问候语。
 4. 根据需要调整模块部分，为角色配置特定的机体模块。
 5. 根据需要配置绘图部分，为角色配置生成图片的功能。
@@ -687,6 +691,15 @@ API Key、AccessKey Secret 和其他服务凭据只应保存在当前设备的�
 
 <a id="web-features"></a>
 
+### > 关于
+
+右键系统托盘中的 AIRI 小图标，选择「关于...」可以打开此界面。
+
+这里可以显示 AIRI 当前版本，手动检查更新，调整 AIRI 的自动更新设置。底部可快速打开文档站和 GitHub 页面。
+
+默认启用自动静默更新，下载好更新包后重启 AIRI 自动安装或应用更新补丁。
+
+
 ## > 网页版特性补充
 
 ::: info 手机电脑或大小屏差异
@@ -749,7 +762,7 @@ API Key、AccessKey Secret 和其他服务凭据只应保存在当前设备的�
 
 ###### > 个人资料
 
-如果您登陆了 AIRI，在这里您可以管理您的账号信息。
+如果您登录了 AIRI，在这里您可以管理您的账号信息。
 
 可以查看并修改显示名称，管理密码和已关联的登录方式（例如 GitHub、Google），也可以在危险操作区注销或删除账号。头像当前由账号资料显示，暂不支持在这里上传新头像。
 
