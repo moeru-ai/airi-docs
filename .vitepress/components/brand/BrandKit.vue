@@ -2,7 +2,7 @@
 import type { BrandActionItem } from './BrandActions.vue'
 import type { BrandAsset, BrandGroup, BrandTone } from './assets'
 
-import 'allo-font/allo-friendly.css'
+import 'allo-font/allo.css'
 
 import SelectTab from '@proj-airi/ui/src/components/form/select-tab/select-tab.vue'
 import { useIntersectionObserver, useMutationObserver } from '@vueuse/core'
@@ -389,6 +389,8 @@ const activeIndex = computed(() => sections.indexOf(activeSection.value as typeo
 
   font-family: var(--bk-font-text);
   font-feature-settings: 'ss01' 0;
+  /* The roundness axis of Allo: 0 is sharp, 50 is the default, and 100 is round. Fonts without the axis ignore it. */
+  font-variation-settings: 'ROND' 80;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
