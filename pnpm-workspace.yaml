@@ -20,7 +20,6 @@ patchedDependencies:
 catalog:
   '@fontsource-variable/comfortaa': ^5.3.0
   '@fontsource-variable/dm-sans': ^5.3.0
-  '@fontsource-variable/nunito': ^5.3.0
   '@fontsource-variable/quicksand': ^5.3.0
   '@fontsource/dm-mono': ^5.3.0
   '@fontsource/dm-serif-display': ^5.3.0
@@ -48,6 +47,7 @@ catalog:
   '@unocss/reset': 66.7.5
   '@vue/tsconfig': ^0.9.1
   '@vueuse/core': ^14.4.0
+  allo-font: ^1.0.3
   animejs: ^4.5.0
   bumpp: ^12.2.1
   colorjs.io: ^0.7.1

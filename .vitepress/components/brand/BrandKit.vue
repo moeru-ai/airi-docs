@@ -2,7 +2,7 @@
 import type { BrandActionItem } from './BrandActions.vue'
 import type { BrandAsset, BrandGroup, BrandTone } from './assets'
 
-import '@fontsource-variable/nunito/index.css'
+import 'allo-font/allo-friendly.css'
 
 import SelectTab from '@proj-airi/ui/src/components/form/select-tab/select-tab.vue'
 import { useIntersectionObserver, useMutationObserver } from '@vueuse/core'
@@ -383,7 +383,7 @@ const activeIndex = computed(() => sections.indexOf(activeSection.value as typeo
     'Comfortaa Variable', 'Comfortaa', ui-rounded, 'Hiragino Maru Gothic ProN', 'PingFang SC', 'Apple SD Gothic Neo',
     'Noto Sans CJK SC', system-ui, sans-serif;
   --bk-font-text:
-    'Nunito Variable', 'Nunito', ui-rounded, system-ui, 'PingFang SC', 'Hiragino Sans', 'Apple SD Gothic Neo',
+    'Allo', ui-rounded, system-ui, 'PingFang SC', 'Hiragino Sans', 'Apple SD Gothic Neo',
     'Noto Sans CJK SC', sans-serif;
   --bk-font-mono: 'DM Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 

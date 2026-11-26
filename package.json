@@ -23,7 +23,6 @@
     "release": "pnpm -F @proj-airi/vitepress-theme run release"
   },
   "dependencies": {
-    "@fontsource-variable/nunito": "catalog:",
     "@iconify/vue": "catalog:",
     "@moeru/std": "catalog:",
     "@openpanel/web": "catalog:",
@@ -31,6 +30,7 @@
     "@proj-airi/ui": "catalog:",
     "@proj-airi/vitepress-theme": "workspace:^",
     "@vueuse/core": "catalog:",
+    "allo-font": "catalog:",
     "animejs": "catalog:",
     "date-fns": "catalog:",
     "motion-v": "catalog:",
