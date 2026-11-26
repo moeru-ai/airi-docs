@@ -12,7 +12,7 @@ const toast = useBrandToast()
 
 /**
  * The brand font for the name and titles. AIRI has no single text font: its interface uses DM Sans, and its chat uses Nunito.
- * So the card does not list a text font, although this page sets its text in Nunito.
+ * So the card does not list a text font, although this page sets its text in Allo.
  */
 const displayFont = { name: 'Comfortaa', url: 'https://fonts.google.com/specimen/Comfortaa' }
 

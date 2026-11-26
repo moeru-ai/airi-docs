@@ -2,7 +2,7 @@
 import type { BrandActionItem } from './BrandActions.vue'
 import type { BrandAsset, BrandGroup, BrandTone } from './assets'
 
-import '@fontsource-variable/nunito/index.css'
+import 'allo-font/allo.css'
 
 import SelectTab from '@proj-airi/ui/src/components/form/select-tab/select-tab.vue'
 import { useIntersectionObserver, useMutationObserver } from '@vueuse/core'
@@ -383,12 +383,14 @@ const activeIndex = computed(() => sections.indexOf(activeSection.value as typeo
     'Comfortaa Variable', 'Comfortaa', ui-rounded, 'Hiragino Maru Gothic ProN', 'PingFang SC', 'Apple SD Gothic Neo',
     'Noto Sans CJK SC', system-ui, sans-serif;
   --bk-font-text:
-    'Nunito Variable', 'Nunito', ui-rounded, system-ui, 'PingFang SC', 'Hiragino Sans', 'Apple SD Gothic Neo',
+    'Allo', ui-rounded, system-ui, 'PingFang SC', 'Hiragino Sans', 'Apple SD Gothic Neo',
     'Noto Sans CJK SC', sans-serif;
   --bk-font-mono: 'DM Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
   font-family: var(--bk-font-text);
   font-feature-settings: 'ss01' 0;
+  /* The roundness axis of Allo: 0 is sharp, 50 is the default, and 100 is round. Fonts without the axis ignore it. */
+  font-variation-settings: 'ROND' 80;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
