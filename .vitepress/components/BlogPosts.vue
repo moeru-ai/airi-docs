@@ -169,7 +169,7 @@ const svgArts = computedAsync(async () => {
 <template>
   <div class="w-full">
     <div>
-      <h1 class="text-4xl text-foreground font-extrabold tracking-tight font-sans-rounded sm:text-5xl">
+      <h1 class="text-4xl text-foreground font-bold tracking-tight font-sans-rounded sm:text-5xl">
         {{ t('docs.theme.blog.title') }}
       </h1>
       <p class="mt-4 text-xl text-muted-foreground">
@@ -211,7 +211,7 @@ const svgArts = computedAsync(async () => {
             v-for="(post, index) of posts"
             :key="post.url"
             :href="post.url"
-            class="block flex flex-col overflow-hidden border-transparent rounded-xl border-solid bg-white/50 decoration-none shadow-sm outline-2 outline-transparent outline-offset-0 outline transition-all transition-all duration-200 duration-300 ease-in-out dark:bg-black/20 dark:shadow-slate-600/5 hover:shadow-md hover:outline-primary/5 hover:outline-offset-2 [&_.post-card-title]:hover:text-primary dark:hover:outline-primary/25"
+            class="block flex flex-col overflow-hidden border-transparent rounded-xl border-solid bg-white/50 font-normal decoration-none shadow-sm outline-2 outline-transparent outline-offset-0 outline transition-all transition-all duration-200 duration-300 ease-in-out dark:bg-black/20 dark:shadow-slate-600/5 hover:shadow-md hover:outline-primary/5 hover:outline-offset-2 [&_.post-card-title]:hover:text-primary dark:hover:outline-primary/25"
           >
             <div class="rounded-t-xl">
               <ClientOnly>

@@ -26,6 +26,14 @@
   color: hsl(var(--muted-foreground));
 }
 
+/*
+ * The plugin sets this title to 800 in a scoped style. Three classes beat its
+ * selector, which has one class and one attribute.
+ */
+.vp-nolebase-git-changelog .vp-nolebase-git-changelog-title .vp-nolebase-git-changelog-last-edited-title {
+  font-weight: 700;
+}
+
 .vp-nolebase-git-changelog-commit-avatar {
   border: 2px solid hsl(var(--background));
 }
