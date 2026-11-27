@@ -66,7 +66,8 @@
 
 html {
   -webkit-text-size-adjust: 100%;
-  font-variation-settings: normal;
+  /* The roundness of Allo, the same value as the preflight in `unocss.ts`. */
+  font-variation-settings: 'ROND' 80;
 }
 
 html.dark {

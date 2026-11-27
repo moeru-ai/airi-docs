@@ -11,7 +11,7 @@ defineProps<{
     :target="item.target"
     :href="item.link"
     :class="[
-      'rounded-xl px-3 py-2 lg:px-5 lg:py-3 font-extrabold outline-none backdrop-blur-md active:scale-95 focus:outline-none text-nowrap text-sm md:text-base',
+      'rounded-xl px-3 py-2 lg:px-5 lg:py-3 font-bold outline-none backdrop-blur-md active:scale-95 focus:outline-none text-nowrap text-sm md:text-base',
       'text-slate-700 dark:text-slate-100',
       'transition-colors,transform',
       'duration-200 ease-in-out',

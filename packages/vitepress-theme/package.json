@@ -58,7 +58,6 @@
   },
   "dependencies": {
     "@fontsource-variable/comfortaa": "catalog:",
-    "@fontsource-variable/dm-sans": "catalog:",
     "@fontsource-variable/quicksand": "catalog:",
     "@fontsource/dm-mono": "catalog:",
     "@fontsource/dm-serif-display": "catalog:",
@@ -73,6 +72,7 @@
     "@radix-ui/colors": "catalog:",
     "@unocss/reset": "catalog:",
     "@vueuse/core": "catalog:",
+    "allo-font": "catalog:",
     "colorjs.io": "catalog:",
     "date-fns": "catalog:",
     "gray-matter": "catalog:",

@@ -28,9 +28,10 @@ export function presetAiriTheme(): Preset<object> {
       -moz-tab-size: 4;
       -o-tab-size: 4;
       tab-size: 4;
-      font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-family: 'Allo', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       font-feature-settings: normal;
-      font-variation-settings: normal;
+      /* The roundness axis of Allo: 0 is sharp, 50 is the default, and 100 is round. Fonts without the axis ignore it. */
+      font-variation-settings: 'ROND' 80;
       -webkit-tap-highlight-color: transparent
   }
 
@@ -79,6 +80,7 @@ export function presetAiriTheme(): Preset<object> {
             'padding': '0.5rem 1rem',
           },
           'h1': {
+            'font-weight': '700',
             'margin-bottom': '1rem',
           },
           'li': {
@@ -133,7 +135,7 @@ export function presetAiriTheme(): Preset<object> {
             name: 'Mystery Quest',
           },
           'sans': {
-            name: 'DM Sans Variable',
+            name: 'Allo',
             provider: 'none',
           },
           'sans-rounded': {
@@ -309,9 +311,9 @@ export function presetAiriTheme(): Preset<object> {
       },
       fontFamily: {
         'sans': `ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";`,
-        'sans-rounded': `"DM Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";`,
-        'sans-serif-halloween': `"Mystery Quest", "DM Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";`,
-        'sans-serif-halloween-secondary': `"Grandstander", "DM Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";`,
+        'sans-rounded': `"Allo", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";`,
+        'sans-serif-halloween': `"Mystery Quest", "Allo", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";`,
+        'sans-serif-halloween-secondary': `"Grandstander", "Allo", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";`,
       },
     },
   }
