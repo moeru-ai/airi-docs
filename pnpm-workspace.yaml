@@ -19,7 +19,6 @@ patchedDependencies:
   '@proj-airi/ui@0.14.1': patches/@proj-airi__ui@0.14.1.patch
 catalog:
   '@fontsource-variable/comfortaa': ^5.3.0
-  '@fontsource-variable/dm-sans': ^5.3.0
   '@fontsource-variable/quicksand': ^5.3.0
   '@fontsource/dm-mono': ^5.3.0
   '@fontsource/dm-serif-display': ^5.3.0
